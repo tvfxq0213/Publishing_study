@@ -51,18 +51,41 @@ html,body{
 .container{
   background:#FAFAFA;
   width:100%;
-  max-width:1250px;
+  max-width:1300px;
   margin: 5% auto;
-  padding: 50px 150px;
+  padding: 50px 5%;
   box-sizing: border-box;
   box-shadow: 5px 10px 15px rgba(163,165,174,0.7);
 
 }
+.card_wrap{
+  align-items:center;
+  display:flex;
+  width:100%;
+ 
+}
+.card_wrap > div{
+  width:100%;
+  align-items:center;
+  padding:0 15px;
+
+}
+
+.order-1{
+  order:1;
+}
+.order-2{
+  order:2;
+}
+.order-3{
+  order:3;
+}
 
 .box-container{
   background:#ffffff;
-  width: 30%;
-  margin: 1.5%;
+  width:100%;
+  max-width: 350px;
+  margin-top: 30px;
   padding:15px; 
   box-sizing: border-box;
   box-shadow: 3px 5px 5px rgba(163,165,174,0.5);
@@ -75,17 +98,34 @@ html,body{
 }
 .box-container p{
   font-weight:400;
-
 }
-.box-container:nth-child(4n+1){
+
+.box-container.box-1{
   border-top:3px solid #45D3D3;
 }
-.box-container:nth-child(4n+2){
+.box-container.box-2{
   border-top:3px solid #EA5353;
 }
-.box-container:nth-child(4n+3){
+.box-container.box-3{
   border-top:3px solid #FCAF4A;
 }
-.box-container:nth-child(4n){
+.box-container.box-4{
   border-top:3px solid #549EF2;
+}
+.img_wrap{
+  text-align:right;
+}
+
+@media screen and (max-width: 760px) {
+  .container{
+    padding: 50px 5%;
+
+  }
+  .box-container{
+    width:100%;
+    max-width:100%;
+  }
+  .card_wrap{
+    flex-direction: column;
+  }
 }
