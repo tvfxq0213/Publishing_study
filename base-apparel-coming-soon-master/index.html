@@ -28,8 +28,9 @@
           Add your email below to stay up-to-date with <br/>announcements and our launch deals.
         </p>
         <form>
-          <input type="email" placeholder="Email Address"/>
-          <button class="button"><span>></span></button>
+          <input class="email" type="text" placeholder="Email Address"/>
+          <img src="./images/icon-error.svg" class="error_icon">
+          <button class="button"><span><img src="./images/icon-arrow.svg"/></span></button>
           <p class="errormsg">Please provide a volid email</p>
         </form>
       </div>
@@ -46,4 +47,24 @@
     </p>
   </footer>
 </body>
+<script>
+  function validateEmail(email) {
+    const re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(email);
+  }
+
+  // Handler when the DOM is fully loaded
+  const selectElement = document.querySelector('.email');
+
+    selectElement.addEventListener('change', (event) => {
+      if(validateEmail(event.target.value) == false){
+        document.querySelector('.text_wrap').classList.add('active');
+
+      }else{
+        document.querySelector('.text_wrap').classList.remove('active');
+      }
+    })
+  
+  </script>
+  
 </html>

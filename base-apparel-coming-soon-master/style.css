@@ -64,7 +64,7 @@ html,body{
   line-height:1.8;
   font-size:1rem;
 }
-.text_wrap input[type='email']{
+.text_wrap input[type='text']{
   padding: 15px 25px;
   color:#CE9797;
   border: 1px solid #CE9797;
@@ -83,7 +83,7 @@ form{
   left: calc(50%  - 40px);
   top: 0px;
   width: 150px;
-  padding: 17px 25px; 
+  padding: 13px 25px; 
   font-size: 1rem;
   color: #fff;
   border:none;
@@ -93,6 +93,8 @@ form{
   background-image:linear-gradient(135deg, #FFF5F5 ,#EE8C8C);
   -webkit-backface-visibility: hidden;
   z-index: 1;
+  cursor:pointer;
+  box-shadow: -3px 5px 10px rgba(206,151,151,0.3);
 }
 .button:after {
   position: absolute;
@@ -115,13 +117,33 @@ form{
   position: relative;
   z-index: 3;
 }
+.text_wrap .errormsg{
+  margin-top:10px;
+  vertical-align: center;
+  color: #F96262;
+  padding-left:25px;
+  display:none;
+}
+.error_icon{
+  display:none;
+  position: absolute;
+  top: 12px;
+  right: calc(50% + 80px);
+}
+.text_wrap.active .errormsg{
+  display:block;
+}
+.text_wrap.active .error_icon{
+  display:block;
+}
+
 .btn{
   position: absolute;
   right: calc(50% - 52px);
   top: 1px;
   width: 80px;
   box-sizing: content-box;
-  padding: 15px 25px; 
+  padding: 12px 25px; 
   border:none;
   border-radius:50px;
   color:#ffffff;
@@ -179,4 +201,8 @@ form{
   .mobile_img{
     display: inline-flex;
   }
+  .container {
+    display: flex;
+    flex-direction: column;
+}
 }
