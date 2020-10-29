@@ -6,15 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Interactive Web</title>
     <style>
-        @keyframes sample-ani {
-            0% {
+        @keyframes sample-ani { 
+            0% { /* 시작점 */
                 transform: translate(0, 0);
             }
             50% {
                 background: red;
                 transform: translate(300px, 0);
             }
-            100% {
+            100% { /* 끝점 */
                 transform: translate(400px, 500px);
             }
         }
@@ -25,8 +25,14 @@
             width: 100px;
             height: 100px;
             border: 2px solid #000;
-            background: #fff000;
-            animation: sample-ani 2s linear forwards 3;
+            background: #fff000; 
+            animation: sample-ani 2s linear forwards 3; /* 키프레임 이름 , 지속시간, 가속도조절, 횟수,  */
+            /* animation-fill-mode : forwards 애니메이션이 끝날 때 위치에 둠 */
+            /* animation-play-state : 기본은 running  paused을 넣으면 멈춤 */
+            /* animation은  키프레임 : 중간에 변화가 가능한 지점을 넣을 수 있음 */
+            /* infinite 는 무한으로 가능함 */
+            /* animation-direction : alternate 왔다갔다  애니메이션 방향, reverse 반대로 */
+
         }
     </style>
 </head>

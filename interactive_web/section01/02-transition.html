@@ -15,12 +15,23 @@
             height: 100px;
             border: 2px solid black;
 			background: rgba(255, 255, 0, 0.7);
-			transition: 1s;
+			transition: 1s; /* linear은 가속도가 없음*/
+            /*
+                수치로된 값이 변할 때 사용됨 
+                ex) auto는 적용되지 않음
+                transition-property :  해당 트렌지션이 나타나는 때
+                transition-duration: 해당 트랜지션이 일어나는 시간(지속시간 )
+                transition-timing-function: 해당 트렌지션이 일어나는 타이밍 ex) linear ease cubic-bezier 등등
+                transition-delay :  해당 트렌지션이 딜레이 시키는 시간
+
+
+            */
         }
         .box:hover {
 			width: 200px;
 			background: red;
             transform: scale(1.5) rotate(15deg);
+
         }
     </style>
 </head>
