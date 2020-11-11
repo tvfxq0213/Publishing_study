@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Interactive Web</title>
+    <style>
+        .world { /* 공간 자체를 3차원 공간으로 만들어 줌  */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 80vw; /* viewport 단위로 하였기 때문에 사이즈를 줄이면 같이 줄어듬 */
+            height: 80vh; /* viewport 단위로 하였기 때문에 사이즈를 줄이면 같이 줄어듬 */
+            background: #fff000;
+            perspective: 500px; /* 원근감 속성 */
+		}
+		.card {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 100px;
+      height: 150px;
+      margin:1rem;
+			border-radius: 0.5em; /* 폰트사이즈 변화에 따라 border-radius 도 변화하도록 설정함  폰트사이즈에 비례하려고 함 */
+			font-size: 1.5rem; 
+			background: red;
+			transform: rotateY(45deg);
+			/* transform: perspective(500px) rotateY(45deg); 회전되는 엘리먼트 자체에 prespective 속성을 줄수도 있음 */
+		}
+    </style>
+</head>
+<body>
+    <div class="world">
+		<div class="card">A</div>
+		<div class="card">B</div>
+		<div class="card">C</div>
+    </div>
+</body>
+</html>
