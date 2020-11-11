@@ -10,19 +10,28 @@
             background: #222;
         }
         @keyframes spaceship-ani {
+            /* 처음시작이 기존과 변화가 없을 경우  0% 을 따로 등록하지 않아도 됨 그리고 from 으로 대체가능*/
+            /* 끝은 100% 혹은 to로 대체가능 */
             to {
-                background-position: -2550px 0;
+                background-position: -2550px 0; 
+                /* 원래 이미지 사이즈보다 절반으로 보여주니깐 */
             }
         }
         .spaceship {
             width: 150px;
-            height: 150px;
+            height: 150px; 
             background: url('images/sprite_spaceship.png') no-repeat 0 0 / cover;
-            animation: spaceship-ani 1s infinite steps(17);
+            /* no-repeat 0 0  /auto 가로크기 150px 세로크기;  */
+            animation: spaceship-ani 1s infinite steps(17); 
+            /* reverse 를 넣으면 반대로 돌아감 */
+            /* gif 이미지로 처리할 수 있지만, gif 이미지는 투명도를 조절하거나 애니메이션 속도를 조절할 수 없음 */
+            /* spaceship-ani 를 1초동안 무제한으로 돌게 함  */
+            /* 그냥 애니메이션으로 처리하면 죽 흘러가니깐 단계별로 이동하게 하는 css animation 이 steps(횟수) */
         }
     </style>
 </head>
 <body>
-    <div class="spaceship"></div>
+    <div class="spaceship"></div> 
+    <!-- 정사각형 영역만 보여줄거고 간격씩 이동하는 애니메이션 -->
 </body>
 </html>
