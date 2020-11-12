@@ -20,11 +20,12 @@
             width: 100px;
             height: 150px;
             margin: 1em;
-            transform: rotateY(0deg);
+            transform: rotateY(0deg); /* 처음에 브라우저에서 렌더링할 때 준비를 하니깐 사용하는것이 좋음 */
             transition: 1s;
             transform-style: preserve-3d;
+            transform-origin: left; /* 기준점 설정 */
         }
-        .card-side {
+        .card-side { /* 실제 카드 면의 디자인 앞, 뒤면 공통 */
             display: flex;
             align-items: center;
             justify-content: center;
@@ -35,25 +36,27 @@
             height: 100%;
             border-radius: 0.5em;
             font-size: 1.5rem;
-            backface-visibility: hidden;
+            backface-visibility: hidden; /* 뒤집힌 뒷면은 안보이게 처리함 */
         }
         .card-side-front {
             z-index: 1;
             background: white;
         }
-        .card-side-back {
+        .card-side-back { /* 카드의 뒷면 */
             background: red;
-            transform: rotateY(180deg);
+            transform: rotateY(180deg); 
         }
         .world:hover .card {
-            transform: rotateY(180deg);
+            transform: rotateY(180deg);/* 각도로 조절 가능 */
         }
     </style>
 </head>
 <body>
     <div class="world">
-        <div class="card">
-            <div class="card-side card-side-front">F</div>
+        <div class="card"> <!--card 라는 div에 앞면 뒷면을 담고 있는 것 그래서 relative 로 적용하고 (자식들의 기준점으로 작용하기 위해서 )-->
+            <!-- 일반적으로 카드 뒷면을  따로 만들지 않으면 앞면의 반대된 모양이 나온다 같은위치에 포개기 위해서 absolute를 사용함  -->
+            <!-- 앞면카드와 뒷면카드를 포갠 형태 -->
+            <div class="card-side card-side-front">F</div> 
             <div class="card-side card-side-back">B</div>
         </div>
     </div>
