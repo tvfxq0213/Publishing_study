@@ -28,7 +28,14 @@
             border-radius: 0.5em;
             font-size: 1.5rem;
             -webkit-backface-visibility: hidden;
-            backface-visibility: hidden;
+            /*
+                -webkit 은 사파리/크롬
+                -moz 는 모질라계령
+                -o 오페라
+                -ms 는 ie
+                접두어가 붙은 것들끼리의 순서는 상관 없지만, 표준 속성은 아래에 써주는 것을 사용하는 것이 좋음
+            */
+            backface-visibility: hidden; /* 사파리가 이 속성이 안먹음 */
             transition: 1s;
         }
         .card-side-front {
@@ -39,7 +46,13 @@
             background: red;
             transform: rotateY(180deg);
         }
-        .world:hover .card-side-front {
+        /* 원래는 카드 컨테이너를 통채로 돌렸는데, ie에서 preserve 3d가 적용이 안되어서 
+        컨테이너 엘리먼트(card)를 없애고 그냥 world 안에 card 앞뒷면을 넣어서 각각 돌리는 형태로 구현할 예정 
+        뒷면은 default 가 180도 임
+        즉 앞면은 0도에서 180도로 돌아가고 
+        뒷면은 180도에서 360도로 돌아가는 형태로 제작한다
+        */
+        .world:hover .card-side-front { 
             transform: rotateY(180deg);
         }
         .world:hover .card-side-back {
