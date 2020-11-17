@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device=width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Interactive Web</title>
+
+  <style>
+    .container{ 
+      height: 50vh;
+      background:gray;
+      display: flex;
+      justify-content: center; /* 축 위의 간격 */
+      align-items: center; /* 수작방면의 간격 */
+    }
+    .item{
+      flex-grow:1; /* 숫자를 넣으면 됨 숫자가 클수록 비율이 높음*/
+      flex-basis: 0;/* 우리가 의도한대로 비율을 맞게 만들어줌  */
+      /* 위의 것들을 flex라는 축약형처럼 만들어 줌  원래는 auto가 기본임  */
+      flex: 1; /* 이렇게 사요하면 flex-basis가 0%로 적용됨  */
+      /* 자기 컨텐츠를 제외한 여백의 부분을 비율대로 배분해줌 */
+      flex-shrink: 1 ;/*줄어들 때의 비율 */
+      flex-grow:0; /*늘어날 때의 비율 */
+      padding: 2em;
+      border:3px solid black;
+      background:white;
+
+    }
+    
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="item">AAA</div>
+    <div class="item">BBB</div>
+    <div class="item">CCC</div>
+    <div class="item">DDD</div>
+    <div class="item">EEE</div>
+
+  </div>
+  
+</body>
+</html>
