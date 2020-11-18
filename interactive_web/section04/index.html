@@ -47,6 +47,30 @@
 
     <script>
         // 직접 타이핑 해보세요
+        // ES06 버전의 스크립트로 실습할 예정
+
+        const ilbuni = document.querySelector('.ilnuni');// 첫번째 것만 가져옴
+        document.querySelectorAll('.ilbuni') // 이건 전체를 가져옴 
+        document.querySelector('.ilbuni:nth-child(2)') // .ilbuni중 2번째 것을 가져옴
+        const char = document.querySelector('.characters');
+        char.setAttribute('data-id', 123);
+        char.getAttribute('data-id');
+
+        const pElem = document.createElement('p');
+        pElem.innerHTML = "안녕";
+        
+        const charactersElem =document.querySelector('.characters');
+        charactersElem.appendChild(pElem);
+        charactersElem.removeChild(document.querySelector('.b')) // 엘리먼트 제거
+
+        ilbuni.classList.add('special') ; //기존에 있던 class에  class 이름을 붙이는거
+        ilbuni.className.add('special'); //기존에 있던 class 는 날라가고 속성자체를 special 로 바꿔버림
+
+        ilbuni.classList.remove('ilbuni') //클래스 제거하는 방법
+        ilbuni.classList.toggle('ilbuni'); // 갖고 있으면 없애고 없으면 붙인다
+        
+
+
     </script>
 </body>
 </html>
