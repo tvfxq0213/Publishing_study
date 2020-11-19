@@ -28,6 +28,7 @@
             border: 10px dashed red;
         }
     </style>
+    
 </head>
 <body>
     <div class="characters">
@@ -47,6 +48,40 @@
 
     <script>
         // 직접 타이핑 해보세요
+
+        const ilbuni = document.querySelector('.ilbuni:nth-child(3)'); // 전역변수
+        ilbuni.addEventListener('click', function(){
+            ilbuni.classList.add('special')
+        });
+
+        (function(){
+            const characters = document.querySelector('.characters');
+            function clickHandler(e) {
+                console.log(e);
+                console.log(e.currentTarget); // this와 e.currentTarget이 같은게 찍힘 
+                console.log(e.target); // 지금 내가 진짜 클릭한 부분
+            }
+            characters.addEventListener('click',clickHandler);
+
+        })();
+
+/*
+        const clickInbuniHandler = () => { //이걸로도 사용가능 함
+            ilbuni.classList.toggle('special')
+        }
+*/
+/*
+        window.addEventListener('load', function (){ // 이건 문서전체가 로드 되었을 때 실행되게 함
+        // 대신 모든 리소스가 다 로드 될 때까지 기다려야함 
+        const ilbuni1 = document.querySelector('.ilbuni.c');
+        console.log(ilbuni1); // 스크립트는 하단에 위치해야함 위에서 부터 아래 순서로 불러오기 때문에
+        function clickInbuniHandler() {
+            ilbuni1.classList.toggle('special');
+        }
+
+        ilbuni1.addEventListener('click', clickInbuniHandler);
+
+        });*/
     </script>
 </body>
 </html>
