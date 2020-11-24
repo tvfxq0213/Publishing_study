@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Interactive Web</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- .ilbuni:nth-of-type 으로 지정하면,
+removeChild로 엘리먼트가 제거 되었을 때
+제거된 엘리먼트가 몇번째인지 그 순서에 따라 CSS가 일치하지 않는 경우가 있어서
+소스코드에서는 따로 a, b, c라는 클래스를 만들었습니다. -->
+</head>
+<body>
+  <div class="menu">
+    <button class="menu-btn" data-value="1">
+      <img class="icon" src="../images/ilbuni_1.png" alt="">
+      <span class="btn-label">일분이 1</span>
+    </button>
+    <button class="menu-btn" data-value="2">
+      <img class="icon" src="../images/ilbuni_2.png" alt="">
+      <span class="btn-label">일분이 2</span>
+    </button>
+    <button class="menu-btn" data-value="3">
+      <img class="icon" src="../images/ilbuni_3.png" alt="">
+      <span class="btn-label">일분이 3</span>
+    </button>
+  </div>
+  
+    <script>
+      /*
+      const btns = document.querySelectorAll('.menu-btn');
+      function clickBtnHandler(){
+        console.log(this);
+      }
+      for(let i=0 ; i<btn.length; i++){
+        btn[i].addEventListener('click', clickBtnHandler);
+      }
+      */
+
+      const menu = document.querySelector('.menu');
+
+      function clickHandler(event){
+
+        let elem = event.target;
+
+        while(elem.classList.contain('menu-btn')){ // menu-btn 이 나타날때까지 체크해야 하니깐
+          elem = elem.parentNode;
+
+          //버튼의 바깥영역을 클릭했을 때 함수를 종료시켜야함
+          if( elem.nodeName == "BODY"){
+            elem = null;
+            return;
+          }
+
+        }
+        console.log(elem.dataset.value);
+       // console.log(event.currentTarget);
+       // console.log(event.target);
+       
+       console.log(event.target.getAttribute('data-value'));
+       //console.log(event.target.dataset.value); // 위에것과 똑같은 값을 불러옴
+      };
+
+      menu.addEventListener('click', clickHandler);
+
+
+
+    </script>
+</body>
