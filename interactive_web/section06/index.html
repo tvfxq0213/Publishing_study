@@ -36,7 +36,7 @@
 			width: 100px;
 			height: 100px;
 			background-repeat: no-repeat;
-			background-position: 50% 100%;
+			background-position: 50% 100%; /* 가로축으론 center 세로축으론 bottom*/
 			background-size: contain;
 			transform: translate3d(100%, 0, 0);
 			transition: 0.5s 0.5s;
@@ -54,6 +54,7 @@
 			transform-origin: 0%;
 			cursor: pointer;
 		}
+		/* nth-of-type으로 사용해도 됨 */
 		.door:nth-child(1) .door-body { background: rgba(255, 0, 0, 0.7); }
 		.door:nth-child(2) .door-body { background: rgba(0, 255, 0, 0.7); }
 		.door:nth-child(3) .door-body { background: rgba(0, 0, 255, 0.7); }
