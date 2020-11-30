@@ -21,7 +21,7 @@
 			height: 150px;
 		}
 		.door-back {
-			overflow: hidden;
+			overflow: hidden; /* 검은영역안에 일분위를 넣어서 안보이게 수정하고 overflow:hidden 처리함 */
 			position: absolute;
 			left: 0;
 			top: 0;
@@ -38,7 +38,9 @@
 			background-repeat: no-repeat;
 			background-position: 50% 100%; /* 가로축으론 center 세로축으론 bottom*/
 			background-size: contain;
-			transform: translate3d(100%, 0, 0);
+			transform: translate3d(100%, 0, 0); /* 가장 성능이 좋게 처리할 수 있음 apple에서도 자주 이것을 이용함 */
+			/* 반응형 때문에 상대적 단위를 잘 쓰는 것이 중요함 */
+			/* 안보이는 이유는 translate3d로 100%이동한 상태이기 떄문에*/
 			transition: 0.5s 0.5s;
 		}
 		.door:nth-child(1) .ilbuni { background-image: url(images/ilbuni_0.png); }
@@ -50,7 +52,8 @@
 			top: 0;
 			width: 100%;
 			height: 100%;
-			transition: 0.5s;
+			transition:0.5s 0.5s; /* translate-delay  translate-duration */
+
 			transform-origin: 0%;
 			cursor: pointer;
 		}
@@ -64,6 +67,20 @@
 		.door-opened .ilbuni {
 			transform: translate3d(0, 0, 0);
 		}
+		
+		/* hover 했을 때 나타나는 이벤트
+		.stage{
+			perspective: 800px; // 시점에 따라 차이가 생김
+		}
+		.door:hover .boor-body{
+			transform :perspective(800px) rotateY(100deg); 
+			
+			// 3d효과를 내기 위해서 상위 엘리먼트에 perspective 를 넣어줘야함(시점에 따라 다르게 표현하는경우)
+			// 시점을 동일하게 하려면 자체에 perspective를 넣어줘야 함 
+		}
+		.door:hover .ilbuni{
+			transform: translate3d(0,0,0); // 일분이를 나오도록 하기 위해서 0으로 옮긴다 
+		}*/
 	</style>
 </head>
 <body>
@@ -72,9 +89,9 @@
 			<div class="door-back">
 				<div class="ilbuni"></div>
 			</div>
-			<div class="door-body"></div>
+			<div class="door-body"></div><!-- 검은영역안에 일분위를 넣어서 안보이게 수정함-->
 		</div>
-		<div class="door">
+		<div class="door ">
 			<div class="door-back">
 				<div class="ilbuni"></div>
 			</div>
@@ -89,10 +106,10 @@
 	</div>
 
 	<script>
-		(function() {
-			const stageElem = document.querySelector('.stage');
+		(function() { 
+			const stageElem = document.querySelector('.stage'); // 이벤트 위임
 			// 현재 활성화된 아이템을 저장
-			let currentItem;
+			let currentItem; // 수시로 값이 바뀔 변수를 선언함 =null = undefined;로 처리해도 됨
 
 			// 활성화
 			function activate(elem) {
@@ -101,15 +118,15 @@
 			}
 
 			// 비활성화
-			function inactivate(elem) {
+			function inactivate(elem) { 
 				elem.classList.remove('door-opened');
 			}
 
 			function doorHandler(e) {
-				const targetElem = e.target;
+				const targetElem = e.target; //current 값이 있는 지 확인할 것 
 
 				if (currentItem) {
-					inactivate(currentItem);
+					inactivate(currentItem); // 기능을 분리함 
 				}
 
 				if (targetElem.classList.contains('door-body')) {
@@ -117,9 +134,12 @@
 				}
 			}
 
-			stageElem.addEventListener('click', doorHandler);
+			stageElem.addEventListener('click', doorHandler); // 클릭이벤트를 추가함 
+			//door 이외의 바깥을클릭했어도 door-opened가 붙는 경우가 발생함
+			//그래서 내가 클릭한 타겟이 door-body의 클래스를 포함하고 있는지 확인이 필요해서 위의 targetElem.classList.contains('door-body')
+			//에서 예외처리를 해주고 있음 
 
-			activate( document.querySelector('.door:nth-child(2)') );
+			activate( document.querySelector('.door:nth-child(2)') ); // 기본으로 2번째 것을 활성화 시킴
 		})();
 	</script>
 </body>
