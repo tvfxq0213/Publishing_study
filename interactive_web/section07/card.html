@@ -21,14 +21,96 @@
 </head>
 <body>
     <script>
+
+    /* 객체를 만드는 방법 1*/
+    /*const person = {};
+    person.name="일분이";
+    person.age=10;
+
+    person.introduce = function(){
+        console.log("안녕하세요 저는 일분이이고 나이는 10살이에요");
+    }
+    person.introduce();*/
+    // const person = new Object();
+
+    /*객체를 만드는 방법 2*/
+    /*
+    const person={
+        name:'일분이',
+        age:10,
+        introduce:function(){
+            console.log('안녕하세요 저는 일분이이고 나이는 10살이에요');
+        }
+    }
+    const person2={
+        name:'이분이',
+        age:8,
+        introduce:function(){
+            console.log('안녕하세요 저는 이분이이고 나이는 10살이에요');
+        }
+    }
+    왜 중복해서 만들까? 하나로 만들순 없을까?
+
+    const person={
+        nickname:'일분이',
+        age:10,
+        introduce:function(){
+            // 이렇게 쓰면 그냥 name과 age는 그냥 변수를 나타내는 건데, 이런 변수를 만든적이 없어서 에러가남
+            //console.log('안녕하세요 저는'+ nickname +'이고 나이는 '+ age+ ' 살이에요');
+            //this 는 메서드를 실행한 주체 객체를 가리킨다
+            console.log('안녕하세요 저는'+ this.nickname +'이고 나이는 '+ this.age+ ' 살이에요');  
+
+        }
+    }
+    const person2={
+        nickname:'이분이',
+        age:8,
+        introduce:function(){
+            console.log('안녕하세요 저는'+ this.nickname +'이고 나이는 '+ this.age+ ' 살이에요');  
+        }
+    }
+
+
+    person.introduce();
+    person2.introduce();
+*/
+    //생성자 (constructor)
+
+    // 객체를 생성해주는 함수는 관례적으로 첫글자를 대문자로 만든다. 
+    // 형태는 일반 함수와 다를 바가 없지만 
+    // 2015에는 class 를 사용해서 만들기도 함
+
+    function Person(nickname, age){
+        this.nickname = nickname;
+        this.age = age;
+       /* this.introduce = function(){
+            console.log('안녕하세요 저는'+ this.nickname +'이고 나이는 '+ this.age+ ' 살이에요');  
+        }*/ 
+        // 이렇게 만들면 별 다를 바 없는 introduce가 개별적으로 만들어져서 메모리 낭비가 됨
+        // 하나를 만들어 놓고 각자 공유할 수 있도록 만드는게 더 효율적임
+        // 공통으로 사용하는 메소드는 공유를 하는 형태로 만드는게 더 좋음
+
+    }
+
+    Person.prototype.introduce =  function(){
+        console.log('안녕하세요 저는'+ this.nickname +'이고 나이는 '+ this.age+ ' 살이에요');  
+    };
+    //인스턴스(instance)
+    const person1 = new Person('일분이',10); // 매개변수를 만들고 인자를 넣어주기로 한다.
+    const person2 = new Person('이분이',8);
+
+
+    person1.introduce();
+    person2.introduce();
+
     function Card(num, color) {
         this.num = num;
         this.color = color;
         this.init();
     }
 
-    Card.prototype = {
-        constructor: Card,
+    Card.prototype = { // 그냥 .타입으로 할때는 상관없지만
+        constructor: Card, //prototype의 객체를 생성해서 작업 할 때에는 constructor를 따로 생성해줘야 함  
         init: function() {
             const mainElem = document.createElement('div');
             mainElem.style.color = this.color;
