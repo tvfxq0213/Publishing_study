@@ -47,14 +47,17 @@
 
     <script>
         (function() {
+            //전역변수 사용은 피하는 것이 좋음
             const outputElem = document.querySelector('.output');
             const ilbuniElem = document.querySelector('.ilbuni');
             let num = 0;
 
             function showValue() {
-                // outputElem.innerHTML = window.pageYOffset;
-                // outputElem.innerHTML = ilbuniElem.offsetTop;
-                let posY = ilbuniElem.getBoundingClientRect().top;
+                // 이벤트는 최대한 밖으로 빼고
+                //함수는 최대한 쪼개기
+                // outputElem.innerHTML = window.pageYOffset; // 윈도우 전역객체가 가진 속성 스크롤을 얼마나 했는지 픽셀로 나타내줌
+                // outputElem.innerHTML = ilbuniElem.offsetTop; //일분이의 처음 위치 스크롤 할때마다 위치를 감지하기엔 부적절함
+                let posY = ilbuniElem.getBoundingClientRect().top; // 객체의 속성중 하나인 getBoundingClientRect를 사용한다 IE에서는 x, y 를 지원하지 않음
                 outputElem.innerHTML = posY;
 
                 if (posY < window.innerHeight * 0.2) {
@@ -64,7 +67,7 @@
                 }
             }
 
-            window.addEventListener('scroll', function() {
+            window.addEventListener('scroll', function() { // 스크롤 이벤트
                 showValue();
             });
 
