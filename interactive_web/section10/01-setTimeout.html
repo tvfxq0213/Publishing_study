@@ -22,11 +22,17 @@
 			console.log('sample!');
 		}
 
-		timeId = setTimeout(sample, 3000);
+		timeId = setTimeout(sample, 3000); // return 하는 값이 숫자로 나옴
 
 		btn.addEventListener('click', function () {
-			clearTimeout(timeId);
+			clearTimeout(timeId); // 리턴한 값을 취소해서 실행이 안되게 함 
 		});
+/*
+		setTimeout(function(){
+			console.log("setTimeout!");
+		},1000) // 1초 후에 이 함수를 실행하세요!
+
+		*/setTimeout
 	</script>
 </body>
 </html>

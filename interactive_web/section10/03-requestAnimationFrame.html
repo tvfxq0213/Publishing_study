@@ -26,13 +26,17 @@
 				return;
 			}
 
-			timeId = requestAnimationFrame(sample);
+			timeId = requestAnimationFrame(sample); //여기에서 sample을 또 호출하니까 계속 반복되는 것
+			// setInterval 의 단점을 개선한 것
+			//기본은 초당 60번을 목표로 함
 		}
 
 		sample();
 
+		 // requestAnimationFrame(sample);// 밖으로 빼면 한번만 실행됨 
+
 		btn.addEventListener('click', function () {
-			cancelAnimationFrame(timeId);
+			cancelAnimationFrame(timeId); // 이벤트를 취소 시키는 것
 		});
 	</script>
 </body>

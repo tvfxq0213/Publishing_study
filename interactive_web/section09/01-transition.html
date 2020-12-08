@@ -7,7 +7,7 @@
   <title>Transition/Animation Event</title>
   <style>
   .ball {
-    position: absolute;
+    position: absolute; /* 혹은 body에 들어가는 스타일을 제거할것*/
     left: 0;
     top: 0;
     width: 30px;
@@ -15,6 +15,7 @@
     border-radius: 50%;
     background: red;
     transition: 2s;
+    /*margin: -15px 0 0 -15px;  이런식으로 클릭한 센터의 위치를 잡아도 되고 */
   }
   .ball.end {
     background: dodgerblue;
@@ -28,7 +29,9 @@
   const ballElem = document.querySelector('.ball');
 
   window.addEventListener('click', function (e) {
+    console.log(e.clientX, e.clientY);
     ballElem.style.transform = 'translate(' + (e.clientX - 15) + 'px, ' + (e.clientY - 15) + 'px)';
+    // 이것처럼 15씩 빼줘서 위치를 잡아도 됨
   });
 
   ballElem.addEventListener('transitionstart', function (e) {
