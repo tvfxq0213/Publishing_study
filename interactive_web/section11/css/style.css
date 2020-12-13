@@ -38,9 +38,9 @@ body[data-char='ragirl'] {
     top: 0;
     width: 100vw;
     height: 100vh;
-    perspective: 1000px;
+    perspective: 1000px; /* 공간 3차원 */
 }
-.stage {
+.stage { /* 캐릭터에 해당하는 부분 */
     position: absolute;
     left: 0;
     top: 0;
@@ -51,8 +51,8 @@ body[data-char='ragirl'] {
 .house {
     width: 100vw;
     height: 100vh;
-    transform: translateZ(-490vw);
-    transform-style: preserve-3d;
+    transform: translateZ(-490vw);/* 통째로 줌 아웃을 시킴 */
+    transform-style: preserve-3d; /* 실제로 3D효과가 자식들까지 잘 작동되려면 */
 }
 .wall {
     position: absolute;
