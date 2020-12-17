@@ -64,7 +64,7 @@ body[data-char='ragirl'] {
 }
 .wall-left {
     width: 1000vw;
-    background: #f8f8f8;
+    background: #f8f8f8; /* 살짝 회색으로 둬서 구분을 두게함 */
     transform: rotateY(90deg) translateZ(-500vw);
 }
 .wall-right {
@@ -74,7 +74,7 @@ body[data-char='ragirl'] {
 }
 .wall-front-a { transform: translateZ(300vw); }
 .wall-front-b { transform: translateZ(50vw); }
-.wall-front-c { transform: translateZ(-200vw); }
+.wall-front-c { transform: translateZ(-200vw); } /* 음수로 된건 뒤로 들어가 보임 */
 .wall-front-d { transform: translateZ(-500vw); }
 .wall-content {
     display: flex;
