@@ -60,6 +60,8 @@
 <script src="js/wall3d.js"></script>
 <script>
 (function () {
+    // 전역변수는 최소화 시킨다 . 다른 곳에서 사용되는 것들과 충돌이 날 수도 있음
+    
     const useragent = window.navigator.userAgent.toLowerCase();
     if (useragent.indexOf('chrome') < 0 && useragent.indexOf('safari') < 0) {
         document.body.style.cssText = 'height: auto';
