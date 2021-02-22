@@ -3,7 +3,7 @@
     const houseElem = document.querySelector('.house');
     const barElem = document.querySelector('.progress-bar');
     const selectCharacterElem = document.querySelector('.select-character');
-    const mousePos = { x: 0, y: 0 };
+    const mousePos = { x: 0, y: 0 }; // 마우스 포인터로 셋팅하려고 함
     let maxScrollValue; // 처음에 값을 선언해 놓으면 화면이 리사이즈 되었을 때 값이 바뀌지 않아서 함수로 만들어서 
     //리사이즈 되었을 때, 값이 변경되도록 만들어 줌
     
@@ -22,9 +22,21 @@
         barElem.style.width = scrollPer * 100 + '%';
     }); //, false 가 기본값 
 
+    // 마우스가 움직일 때 발생하는 이벤트 
     window.addEventListener('mousemove', function (e) {
+        //마우스를 움직일때 현재 위치를 알아오는 방법 
+       // console.log(e.clientX);
+       // console.log(e.clientY);
+        //마우스가 가운데에 있을 때에는 동작하지 않아야 하고, 오른쪽으로 갔을때, 왼쪽으로 갔을 때 이동해야 하므로 가공이 필요하다
+        //회전각을 계산한다. 
         mousePos.x = -1 + (e.clientX / window.innerWidth) * 2;
         mousePos.y = 1 - (e.clientY / window.innerHeight) * 2;
+        this.console.log(mousePos);
+        //왼쪽 끝으로 갈수록 x는 -1이 가까워지고 오른쪽으로 갈수록  1이 되어간다.
+        // 위로 갈수록 y는 +1에 가까워지고 아래로 갈수록 -1이 되어간다. 
+        // stage element를 회전 시킨다.
+        // x축을 기준으로 회전하는 건 마우스 y 위치에 영향을 받고
+        // y축을 기준으로 회전하는건 마우스 포지션 x의 위치에 영향을 받는다. 
         stageElem.style.transform = 'rotateX(' + (mousePos.y * 5) + 'deg) rotateY(' + (mousePos.x * 5) + 'deg)';
     });
 
