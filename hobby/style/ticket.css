@@ -205,3 +205,28 @@ div {
         .m-ticket-03 .ticket-bottom .d-flex.info > div h4 {
           font-weight: 500;
           font-size: 20px; }
+
+.ticket-01 {
+  margin: 5% auto;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+  width: 700px;
+  border-radius: 16px;
+  background: #961210;
+  display: flex;
+  padding-bottom: 20px; }
+  .ticket-01 .contents {
+    background: #ffffff;
+    padding: 30px 20px; }
+  .ticket-01 .ticket-left {
+    width: 450px; }
+    .ticket-01 .ticket-left .d-flex:nth-of-type(1) {
+      padding: 20px;
+      color: #ffffff;
+      justify-content: space-between; }
+  .ticket-01 .ticket-right {
+    width: 250px; }
+    .ticket-01 .ticket-right .d-flex:nth-of-type(1) {
+      width: 100%;
+      padding: 20px;
+      color: #ffffff;
+      justify-content: center; }

@@ -282,3 +282,38 @@ div{box-sizing: border-box;}
     }
   }
 }
+
+.ticket-01{
+  margin:5% auto;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px; 
+  width:700px;
+  border-radius:16px;
+  background:$ticket-color-02;
+  display:flex;
+  padding-bottom:20px;
+  .contents{
+    background:$white;
+    padding: 30px 20px;
+  }
+  .ticket-left{
+    width:450px;
+    .d-flex{
+      &:nth-of-type(1){
+        padding: 20px;
+        color:$white;
+        justify-content: space-between;
+      }
+    }
+  }
+  .ticket-right{
+    width:250px;
+    .d-flex{
+      &:nth-of-type(1){
+        width:100%;
+        padding: 20px;
+        color:$white;
+        justify-content: center;
+      }
+    }
+  }
+}
