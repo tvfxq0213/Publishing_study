@@ -129,7 +129,7 @@ body[data-char='ragirl'] {
     background-position: 0 0;
     background-size: cover;
     -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
+    backface-visibility: hidden; /* 요소의 뒷면이 사용자를 향할 때 보여야 하는지 지정합니다. */
 }
 .character-face.face-back {
     transform: rotateY(180deg);
