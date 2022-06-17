@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>Responsive Web youtube</title>
+  <style>
+    html,body{
+  padding:0;
+  margin:0;
+  width:100%;
+  height:100%;
+  font-family: 'Roboto', sans-serif;
+}
+p,h1,h2,h3,h4,h5,h6{
+  margin:0;
+  padding:0;
+}
+a{text-decoration: none;}
+div{box-sizing: border-box;}
+.text-center{
+  text-align: center;
+}
+.my-1{
+  margin-top:0.25rem;
+  margin-bottom:0.25rem;
+}
+.my-2{
+  margin-top:0.5rem;
+  margin-bottom:0.5rem;
+}
+.my-3{
+  margin-top:1rem;
+  margin-bottom:1rem;
+}
+.video-section{
+  
+  width:100%;
+  max-width:960px;
+  margin:0 auto;
+}
+
+.video-container{
+  background:#dfdfdf;
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding-top: 56.25%;
+}
+
+.video-container.ratio_43{
+  padding-top:75%
+}
+.video-container.ratio_1{
+  padding-top:100%;
+}
+
+iframe{
+  z-index: 1;
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+  </style>
+
+</head>
+<body>
+  <section class="video-section">
+    <h3 class="text-center my-3"> Youtube 동영상을 반응형으로 넣기</h3>
+    <p class="my-2">16:9</p>
+    <div class="video-container ">
+      <iframe  src="https://www.youtube.com/embed/mftvdGSGMPg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
+    </div>
+
+    <p class="my-2">4:3</p>
+    <div class="video-container ratio_43">
+      <iframe src="https://www.youtube-nocookie.com/embed/mi3qCaWoj5w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    
+    </div>
+
+    <p class="my-2">1:1</p>
+    <div class="video-container ratio_1">
+      <iframe  src="https://www.youtube.com/embed/BfkGfLFPXzk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
+    </div>
+  </section>
+</body>
+</html>
