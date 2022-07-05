@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>Responsive imagemap</title>
+  <style>
+    html,body{
+  padding:0;
+  margin:0;
+  width:100%;
+  height:100%;
+  font-family: 'Roboto', sans-serif;
+}
+p,h1,h2,h3,h4,h5,h6{
+  margin:0;
+  padding:0;
+}
+a{text-decoration: none;}
+div{box-sizing: border-box;}
+.text-center{
+  text-align: center;
+}
+img.map, map area{
+    outline: 2px solid red;
+}
+.container{
+  width:100%;
+}
+.container .basic img{
+  width:1920px;
+  height:100%;
+}
+.container img{
+  width:100%;
+  height:auto;
+}
+.my-1{
+  margin-top:0.25rem;
+  margin-bottom:0.25rem;
+}
+.my-2{
+  margin-top:0.5rem;
+  margin-bottom:0.5rem;
+}
+.my-3{
+  margin-top:1rem;
+  margin-bottom:1rem;
+}
+.mb-3{
+  margin-bottom:1rem;
+}
+
+  </style>
+
+</head>
+<body>
+  <section class="container">
+    <h3 class="text-center my-3"> Imagemap Responsive 이미지맵 반응형 적용하기</h3>
+    <p class="mb-3">
+      적응형 페이지 내에서 이미지 맵을 적용하는 방법은 어렵지 않지만, 반응형이 적용된 페이지 내에서는 이미지맵을 어떻게 처리해야 할지 어려울 때 많다<br/>
+      특히 모바일웹을 지원하는 경우 이미지맵을 꼭 지원해 줘야 제대로된 링크를 이동할 수 있는데 
+      이번엔 이런 반응형 웹에서 이미지맵을 적용하는 법을 소개해 보려고 한다.
+    </p>
+
+<!--
+    <div class="mb-3 basic">
+      <h4>0. 기본 이미지 맵 적용방법</h4>
+
+      <a href="https://www.image-map.net/" target="_blank">https://www.image-map.net/</a>에 페이지에서 이미지 업로드 후 포지션을 잡아주면 편하다 
+      <img src="../sample/imagemap_sample.jpg" alt="deskImage" title="deskImage" usemap="#desk"/>
+
+      <map name="desk">
+          <area target="" alt="cup" title="cup" href="#cup" coords="770,294,67" shape="circle">
+          <area target="" alt="pot" title="pot" href="#pot" coords="1838,507,141" shape="circle">
+          <area target="" alt="dairy" title="dairy" href="#dairy" coords="1687,739,1873,1019" shape="rect">
+          <area target="" alt="notebook" title="notebook" href="#notebook" coords="7,848,461,877,487,378,7,350" shape="poly">
+          <area target="" alt="laptop" title="laptop" href="#laptop" coords="3,290,24,338,290,353,740,103,695,0,5,0" shape="poly">
+          <area target="" alt="clip" title="clip" href="#clip" coords="110,1011,151,1079,176,1069,173,1049,215,1008,234,1009,219,970,217,987,156,1016,134,996" shape="poly">
+      </map>
+
+    </div>
+  
+    <div class="mb-3">
+      <h4>1. rwd-image-maps (use jQuery)</h4>
+
+      <img src="../sample/imagemap_sample.jpg" width="1920" height="1152" alt="deskImage" title="deskImage" usemap="#desk_rwd_jQuery"/>
+
+      <map name="desk_rwd_jQuery">
+          <area target="" alt="cup" title="cup" href="#cup" coords="770,294,67" shape="circle">
+          <area target="" alt="pot" title="pot" href="#pot" coords="1838,507,141" shape="circle">
+          <area target="" alt="dairy" title="dairy" href="#dairy" coords="1687,739,1873,1019" shape="rect">
+          <area target="" alt="notebook" title="notebook" href="#notebook" coords="7,848,461,877,487,378,7,350" shape="poly">
+          <area target="" alt="laptop" title="laptop" href="#laptop" coords="3,290,24,338,290,353,740,103,695,0,5,0" shape="poly">
+          <area target="" alt="clip" title="clip" href="#clip" coords="110,1011,151,1079,176,1069,173,1049,215,1008,234,1009,219,970,217,987,156,1016,134,996" shape="poly">
+      </map>
+
+    </div>
+  
+  -->
+    <div class="mb-3">
+      <h4>2. fixImageMaps (vanilla js )</h4>
+      <img src="../sample/imagemap_sample.jpg" width="1920" height="1152" alt="deskImage" title="deskImage" usemap="#desk_rwd_vanilla"/>
+
+      <map name="desk_rwd_vanilla">
+          <area target="" alt="cup" title="cup" href="#cup" coords="770,294,67" shape="circle">
+          <area target="" alt="pot" title="pot" href="#pot" coords="1838,507,141" shape="circle">
+          <area target="" alt="dairy" title="dairy" href="#dairy" coords="1687,739,1873,1019" shape="rect">
+          <area target="" alt="notebook" title="notebook" href="#notebook" coords="7,848,461,877,487,378,7,350" shape="poly">
+          <area target="" alt="laptop" title="laptop" href="#laptop" coords="3,290,24,338,290,353,740,103,695,0,5,0" shape="poly">
+          <area target="" alt="clip" title="clip" href="#clip" coords="110,1011,151,1079,176,1069,173,1049,215,1008,234,1009,219,970,217,987,156,1016,134,996" shape="poly">
+      </map>
+    </div>
+  
+    
+<!--
+    <div class="mb-3">
+      <h4>3. imageMapResizer.min.js (use jQuery)</h4>
+      <img src="../sample/imagemap_sample.jpg" alt="deskImage" title="deskImage" usemap="#desk_imageMapResizer_jQuery"/>
+
+      <map name="desk_imageMapResizer_jQuery">
+          <area target="" alt="cup" title="cup" href="#cup" coords="770,294,67" shape="circle">
+          <area target="" alt="pot" title="pot" href="#pot" coords="1838,507,141" shape="circle">
+          <area target="" alt="dairy" title="dairy" href="#dairy" coords="1687,739,1873,1019" shape="rect">
+          <area target="" alt="notebook" title="notebook" href="#notebook" coords="7,848,461,877,487,378,7,350" shape="poly">
+          <area target="" alt="laptop" title="laptop" href="#laptop" coords="3,290,24,338,290,353,740,103,695,0,5,0" shape="poly">
+          <area target="" alt="clip" title="clip" href="#clip" coords="110,1011,151,1079,176,1069,173,1049,215,1008,234,1009,219,970,217,987,156,1016,134,996" shape="poly">
+      </map>
+
+    </div>
+  
+    <div class="mb-3">
+      <h4>4. imageMapResizer.min.js (vanilla js)</h4>
+      <img src="../sample/imagemap_sample.jpg" alt="deskImage" title="deskImage" usemap="#desk_imageMapResizer_vanilla"/>
+
+      <map name="desk_imageMapResizer_vanilla">
+          <area target="" alt="cup" title="cup" href="#cup" coords="770,294,67" shape="circle">
+          <area target="" alt="pot" title="pot" href="#pot" coords="1838,507,141" shape="circle">
+          <area target="" alt="dairy" title="dairy" href="#dairy" coords="1687,739,1873,1019" shape="rect">
+          <area target="" alt="notebook" title="notebook" href="#notebook" coords="7,848,461,877,487,378,7,350" shape="poly">
+          <area target="" alt="laptop" title="laptop" href="#laptop" coords="3,290,24,338,290,353,740,103,695,0,5,0" shape="poly">
+          <area target="" alt="clip" title="clip" href="#clip" coords="110,1011,151,1079,176,1069,173,1049,215,1008,234,1009,219,970,217,987,156,1016,134,996" shape="poly">
+      </map>
+    </div>
+  -->
+
+    <div class="notice">
+      <h6 class="">Reference</h6>
+      <p>
+        <a href="https://mattstow.com/experiment/responsive-image-maps/rwd-image-maps.html">rwdImageMaps (jQuery) 참고</a><br/>
+        <a href="https://github.com/lucakiebel/vanilla-rwdImageMaps">rwdImageMaps (vanilla js) 참고</a><br/>
+        <a href="https://github.com/davidjbradshaw/image-map-resizer">imageMapResizer.min.js</a>
+      </p>
+    </div>
+  </section>
+
+<!--
+  <script src="../js/imageMapResizer.js"></script>
+  <script>
+    imageMapResize();
+  </script>
+-->
+  <script>
+    function fixImageMaps(force) {
+		var imgs = document.querySelectorAll("img[usemap]");
+		[].forEach.call(imgs, function(img) {
+			if (!img.naturalHeight) { return; }
+			var h = img.height / img.naturalHeight;
+			var w = img.width / img.naturalWidth;
+			var map = document.getElementsByName(img.useMap.slice(1))[0];
+			if (!map) { return; }
+			for (var i = 0; i < map.children.length; i++) {
+				var area = map.children[i];
+				if (!area.coords) { continue; }
+				var coords = area.coords;
+				if (!area.originalCoords) {
+					area.originalCoords = coords;
+				} else {
+					coords = area.originalCoords;
+				}
+				var split = coords.split(",")
+				var fixed = "";
+				split.forEach(function(coord, n) {
+					if (n != 0) { fixed += ","; }
+					fixed += n % 2 == 0 ? Number(coord) * w : Number(coord) * h;
+				})
+				area.coords = fixed;
+			}
+		});
+	}
+	window.onresize = fixImageMaps;
+	window.onload = fixImageMaps;
+  
+
+  </script>
+
+  <!-- jQuery Cdn -->
+  <!--
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+-->
+  <!--
+  <script src="../js/jquery.rwdImageMaps.js"></script>
+  <script>
+    $(document).ready(function(e) {
+      $('img[usemap]').rwdImageMaps();
+    });
+
+  </script>
+-->
+
+
+
+
+</body>
+</html>
