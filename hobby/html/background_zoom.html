@@ -5,14 +5,38 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
   <title>Background Zoom</title>
   <style>
+    .bgBox{
+      width:100%;
+      overflow:hidden;
+    }
+
+
+
+  .bgExample {
+    width: 100vw;
+    height: 100vh;
+    background: #ccc url('https://static.pexels.com/photos/1341/blue-abstract-glass-balls.jpg') no-repeat center center;
+    background-size: 100%;
+    animation: grow infinite alternate ease-in-out 8s;
+  }
+
+  @keyframes grow {
+      0% {
+        transform: scale(1);
+      }
+      100% {
+        transform: scale(3.5);
     
+      }
+    }
   </style>
   
 </head>
 <body>
-  <div class="container">
-  
-  </div>
+  <div class="bgBox">
+    <div class="bgExample">
+    </div>
+  </div>  
 
 </body>
 </html>
