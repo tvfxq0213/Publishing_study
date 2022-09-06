@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <skin>
 	<information>
-		<name>Letter</name>
+		<name>bookshelf</name>
 		<version>1.1</version>
 		<description>
-			<![CDATA[ 최소한의 디자인, 깔끔한 스킨을 원하는 블로거를 위해 만들었습니다. 깔끔한 편지지 위에 여러분의 이야기를 들려주세요. ]]>
+			<![CDATA[ 독서기록을 위한 스킨을 원하는 블로거를 위해 제작하였습니다. ]]>
 		</description>
 		<license>
 			<![CDATA[ MIT License ]]>
 		</license>
 	</information>
 	<author>
-		<name>Tistory</name>
-		<homepage>http://www.tistory.com</homepage>
-		<email>tistoryblog@daum.net</email>
+		<name>HENA</name>
+		<homepage>https://hane-j.tistory.com/</homepage>
+		<email>thattheday@gmail.com</email>
 	</author>
 	<default>
 		<recentEntries>4</recentEntries>
@@ -36,7 +36,7 @@
 			<none>0</none>
 			<single>1</single>
 		</trackbackMessage>
-		<contentWidth>725</contentWidth>
+		<contentWidth>860</contentWidth>
 		<toolbar>white</toolbar>
 	</default>
 	<cover>
@@ -77,14 +77,16 @@
 			<type>SELECT</type>
 			<option><![CDATA[
 				[
-					{"name":"thema_aqua", "label":"아쿠아(기본)", "value":"thema_aqua"},
+					{"name":"thema_blacknred", "label":"블랙&레드(기본)", "value":"thema_blacknred"},
+					{"name":"thema_blacknblue", "label":"블랙&블루", "value":"thema_blacknblue"},
+					{"name":"thema_blacknyellow", "label":"블랙&옐로우", "value":"thema_blacknyellow"},
+					{"name":"thema_red", "label":"레드", "value":"thema_red"},
 					{"name":"thema_blue", "label":"블루", "value":"thema_blue"},
-					{"name":"thema_black", "label":"블랙", "value":"thema_black"},
-					{"name":"thema_purple", "label":"퍼플", "value":"thema_purple"},
-					{"name":"thema_orange", "label":"오렌지", "value":"thema_orange"}
+					{"name":"thema_yellow", "label":"옐로우", "value":"thema_yellow"}
+
 				]
 			]]></option>
-			<default>thema_aqua</default>
+			<default>thema_blacknred</default>
 		</variable>
 		<variable>
 			<name>penelopeListType</name>
@@ -105,7 +107,7 @@
 			<description></description>
 			<type>STRING</type>
 			<option></option>
-			<default>Designed by Tistory.</default>
+			<default>Designed by HENA.</default>
 		</variable>
 		<variable>
 			<name>snsFacebook</name>
@@ -129,7 +131,7 @@
 			<description></description>
 			<type>STRING</type>
 			<option></option>
-			<default>#</default>
+			<default>https://www.instagram.com/alas_record_books/</default>
 		</variable>
 	</variables>
 </skin>
