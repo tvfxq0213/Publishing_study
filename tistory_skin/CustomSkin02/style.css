@@ -12,6 +12,25 @@
     font-weight: bold;
     font-style: normal;
 }
+
+
+/* color set */
+
+:root {
+  --text-first-color: #0b090a;
+  --text-second-color: #161a1d;
+  --red-first-color: #660708;
+  --red-second-color: #E5383B;
+  --yellow-first-color:#DC9104;/*#faa916*/
+  --yellow-second-color: #FBB637;
+  --blue-first-color:#002475;
+  --blue-second-color:#3370FF;
+  --gray-first-color: #B1A7A6;
+  --gray-second-color: #D3D3D3;
+  --gray-thrid-color:#F5F3F4;
+  --white-color:#FFFFFF;
+  
+}
 /* basic */
 article, aside, canvas, details, figcaption, figure, footer, header, main, menu, nav, section, summary {
   display: block;
