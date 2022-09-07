@@ -28,16 +28,7 @@
 		<div id="wrap" class="[##_var_penelopeColorSet_##]">
 			<!-- area_menu -->
 			<div class="area_menu">
-				<!-- 블로그 정보 -->
-				<div class="about_me_pc">
-					<div class="box_sidebar about_me">
-						<div class="inbox">
-							<h3 class="title_sidebar">ABOUT ME</h3>
-							<p class="text_about">[##_desc_##]</p>
-						</div>
-					</div>
-				</div>
-
+			
 				<nav class="menu_navigation">
 					[##_blog_menu_##]
 					[##_category_list_##]
@@ -102,13 +93,13 @@
 				<header id="header">
 					<div class="inner_header">
 						<h1 class="logo">
-							<a href="[##_blog_link_##]" title="[##_title_##]" class="link_logo"
+							<a href="[##_blog_link_##]" title="[##_title_##]" class="link_logo">
 								<s_if_var_logoImage>
 									<img class="logo" src="[##_var_logoImage_##]"/>
 									<span class="blind">[##_title_##]</span>
 								</s_if_var_logoImage> 
 								<s_not_var_logoImage>
-									<span class="title_text fw-bold">[##_title_##]</span>
+									<span class="title_text">[##_title_##]</span>
 								</s_not_var_logoImage>
 							</a>
 						</h1>
@@ -143,7 +134,7 @@
 						<s_cover_group>
 							<s_cover_rep>
 								<s_cover name='main_post01'>
-									<!-- index_type_post  -->
+									<!-- main_post01  -->
 									<div class="main_post01">
 										<h2 class="title_category">[##_cover_title_##]</h2>
 										<div class="swiper main_swiper">
@@ -189,7 +180,7 @@
 										
 									</div>
 									
-									<!-- // index_type_post -->
+									<!-- // main_post01 -->
 								</s_cover>
 								<s_cover name='post_style01'>
 									<!-- index_type_post  -->
@@ -473,7 +464,7 @@
 														<p class="txt_post">
 															[##_article_rep_summary_##]
 														</p>
-														<button type="button" class="btn_more thema_apply mobile_blind">Read More</button>
+														<button type="button" class="btn_more thema_apply mobile_blind">더보기</button>
 													</a>
 												</div>
 											</div>
