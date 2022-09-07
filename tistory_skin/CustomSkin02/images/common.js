@@ -159,4 +159,38 @@ $(function () {
 			$o.hide();
 		}
 	});
+	var swiper = new Swiper(".main_swiper", {
+		centeredSlides: true,
+		autoplay: {
+			delay: 8000,
+			disableOnInteraction: false,
+		},
+		slidesPerView: 1,
+    loop: true,
+		pagination: {
+			el: ".swiper-pagination",
+			clickable: true,
+		},
+	
+	});
 });
+
+window.onload = function () {
+	$('#loading').animate({ opacity: 0 }, 100,
+		function () {
+			$('#loading').hide();
+		});
+}
+
+var fnPageLoadingShow = function () {
+	$('#loading').animate({ opacity: 100 }, 0,
+		function () {
+			$('#loading').show();
+		});
+}
+var fnPageLoadingHide = function () {
+	$('#loading').animate({ opacity: 0 }, 100,
+		function () {
+			$('#loading').hide();
+		});
+}
