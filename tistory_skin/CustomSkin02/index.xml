@@ -18,8 +18,8 @@
 	<default>
 		<recentEntries>4</recentEntries>
 		<recentComments>5</recentComments>
-		<recentTrackbacks>5</recentTrackbacks>
-		<itemsOnGuestbook>5</itemsOnGuestbook>
+		<recentTrackbacks>4</recentTrackbacks>
+		<itemsOnGuestbook>4</itemsOnGuestbook>
 		<tagsInCloud>20</tagsInCloud>
 		<sortInCloud>3</sortInCloud>
 		<expandComment>1</expandComment>
@@ -47,22 +47,22 @@
 		</item>
 		<item>
 			<name>post_style01</name>
-			<label><![CDATA[ 포스트 스타일 1 ]]></label>
+			<label><![CDATA[ 포스트 카드세로이벤트형]]></label>
 			<description><![CDATA[ 책모양의 이미지+타이틀 형태로 마우스 오버시 상단의 이미지는 책 밑 형태로 변경되며 타이틀과 내용이 출력됩니다. PC기준 4개 목록에 최적화 ]]></description>
 		</item>
 		<item>
 			<name>post_style02</name>
-			<label><![CDATA[ 포스트 스타일 2 ]]></label>
+			<label><![CDATA[ 포스트 카드가로형(이미지오른쪽) ]]></label>
 			<description><![CDATA[ 카드형 포스트리스트 형태로 가로사이즈가 더 길며 오른쪽에 이미지가 왼쪽에는 타이틀과 내용이 잘린 형태로 출력됩니다. PC기준 4개 목록에 최적화]]></description>
 		</item>
 		<item>
 			<name>post_style03</name>
-			<label><![CDATA[ 포스트 스타일 3 ]]></label>
+			<label><![CDATA[ 포스트 카드세로형 ]]></label>
 			<description><![CDATA[ 카드형 포스트리스트 형태로 세로사이즈가 더 길며 상단에 이미지가 하단엔 타이틀이 노출됩니다.  PC기준 4개 목록에 최적화 ]]></description>
 		</item>
 		<item>
 			<name>post_style04</name>
-			<label><![CDATA[ 포스트 스타일 3 ]]></label>
+			<label><![CDATA[ 포스트 카드가로형(이미지상단) ]]></label>
 			<description><![CDATA[ 카드형 포스트리스트 형태로 이미지는 상단에 원형 사이즈에 크롲되어 들어가고 아래 카드 영역에 타이틀과 내용이 잘린형태로 들어갑니다. PC기준 3개 목록에 최적화 ]]></description>
 		</item>
 		<item>
