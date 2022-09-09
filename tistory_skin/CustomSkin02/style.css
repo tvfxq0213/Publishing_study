@@ -1208,6 +1208,7 @@ box-shadow: 13px 13px 8px 0px rgba(151, 146, 153,0.6);
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  margin:60px auto;
 }
 .post_style01 .list_item {
   box-sizing: border-box;
@@ -1288,6 +1289,7 @@ box-shadow: 13px 13px 8px 0px rgba(151, 146, 153,0.6);
 
 /* post_style02 */
 .post_style02 .list-wrap {
+  margin:60px auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
