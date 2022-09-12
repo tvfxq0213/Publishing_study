@@ -20,6 +20,15 @@
 	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
 	<script src="./images/common.js"></script>
+	<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-2P1QL2CD37"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-2P1QL2CD37');
+</script>
 </head>
 
 <body id="[##_body_id_##]" class="[##_var_penelopeColorSet_##]">
@@ -146,8 +155,8 @@
 																<div class="text-wrap">
 																	<p>[##_cover_item_category_##]</p>
 																	<h2 class="fw-bold">[##_cover_item_title_##]</h2>
-																	<p>[##_cover_item_date_##]</p>
-																	<p>
+																	<p>[##_cover_item_simple_date_##]</p>
+																	<p class="desc">
 																		[##_cover_item_summary_##]
 																	</p>
 																	<div class="btn-wrap">
@@ -617,7 +626,7 @@
 																			</s_rp_member>
 
 																			<div class="form_reg">
-																				<button type="button" class="btn_register thema_apply"
+																				<button type="button" class="btn_register btn btn-width-180 btn-thema"
 																					onclick="[##_rp_onclick_submit_##]">등록</button>
 																			</div>
 																		</div>
@@ -782,10 +791,9 @@
 						<s_tag>
 							<div class="box_tag_trail">
 								<h3 class="title_category">태그</h3>
-								<div class="tag_cont">
-									<!-- 마지막 콤마(,) 를 javascript 로 지워줘야 하나. by osh -->
+								<div class="tag-wrap">
 									<s_tag_rep>
-										<a href="[##_tag_link_##]" class="[##_tag_class_##]">[##_tag_name_##]</a>,
+										<a href="[##_tag_link_##]" class="[##_tag_class_##]">[##_tag_name_##]</a>
 									</s_tag_rep>
 								</div>
 							</div>
@@ -839,7 +847,7 @@
 												</s_guest_member>
 
 												<div class="form_reg">
-													<button type="button" class="btn_register thema_apply"
+													<button type="button" class="btn_register btn btn-thema btn-width-180"
 														onclick="[##_guest_onclick_submit_##]">등록</button>
 												</div>
 											</div>
@@ -917,7 +925,8 @@
 				</main>
 
 				<!-- aside -->
-				<aside class="sidebar mobile_blind">
+		
+				<aside class="sidebar mobile_blind" style="display:none;">
 					<div class="inner_sidebar thema_apply">
 						<s_sidebar>
 							<s_sidebar_element>

@@ -164,10 +164,17 @@ iframe {
 }
 /* btn style */
 .btn {
-  padding: 8px 24px;
+  padding: 12px 24px 11px;
   text-decoration: none;
   transition: all 0.3s;
   line-height: 1;
+  display:inline-block;
+}
+.btn.btn-width-180{
+  min-width:180px;
+}
+.btn.w-100{
+  width:100%;
 }
 .btn.btn-default {
   border: 1px solid #000;
@@ -216,14 +223,6 @@ iframe {
   background: var(--red-first-color);
 }
 
-.thema_blacknred .title_post:hover {
-  color: var(--red-first-color);
-}
-.thema_blacknred a.thema_apply {
-  color: var(--text-second-color);
-  text-decoration: underline;
-}
-
 .thema_blacknred .thema_apply input::-webkit-input-placeholder {
   color: var(--red-first-color);
 }
@@ -233,19 +232,6 @@ iframe {
 }
 
 .thema_blacknred .thema_apply input::-ms-input-placeholder {
-  color: var(--red-first-color);
-}
-
-.thema_blacknred button.thema_apply {
-  background: var(--red-first-color);
-}
-
-.thema_blacknred .btn_post_more:hover {
-  background: var(--red-first-color);
-  color: var(--white-color);
-}
-
-.thema_blacknred .item_info .thema_apply {
   color: var(--red-first-color);
 }
 
@@ -274,13 +260,31 @@ iframe {
 }
 
 /* thema_blacknblue */
-.thema_blacknblue .title_post:hover {
+.thema_blacknblue .btn-thema {
+  background: var(--blue-first-color);
+  color: var(--white-color);
+}
+.thema_blacknblue .btn-thema:hover {
+  opacity: 0.7;
+}
+.thema_blacknblue .btn-thema-outline {
+  border: 1px solid var(--blue-first-color);
+  background: transparent;
   color: var(--blue-first-color);
 }
-
-.thema_blacknblue a.thema_apply {
-  color: var(--text-second-color);
-  text-decoration: underline;
+.thema_blacknblue .btn-thema-outline:hover {
+  background: var(--blue-first-color);
+  color: var(--white-color);
+}
+.thema_blacknblue .btn-thema-black {
+  border: 1px solid var(--text-first-color);
+  background: var(--white-color);
+  color: var(--text-first-color);
+}
+.thema_blacknblue .btn-thema-black:hover {
+  color: var(--white-color);
+  border: 1px solid var(--blue-first-color);
+  background: var(--blue-first-color);
 }
 
 .thema_blacknblue .thema_apply input::-webkit-input-placeholder {
@@ -292,19 +296,6 @@ iframe {
 }
 
 .thema_blacknblue .thema_apply input::-ms-input-placeholder {
-  color: var(--blue-first-color);
-}
-
-.thema_blacknblue button.thema_apply {
-  background: var(--blue-first-color);
-}
-
-.thema_blacknblue .btn_post_more:hover {
-  background: var(--blue-first-color);
-  color: var(--white-color);
-}
-
-.thema_blacknblue .item_info .thema_apply {
   color: var(--blue-first-color);
 }
 
@@ -333,12 +324,31 @@ iframe {
 }
 
 /* thema_blacknyellow */
-.thema_blacknyellow .title_post:hover {
+.thema_blacknyellow .btn-thema {
+  background: var(--yellow-first-color);
+  color: var(--white-color);
+}
+.thema_blacknyellow .btn-thema:hover {
+  opacity: 0.7;
+}
+.thema_blacknyellow .btn-thema-outline {
+  border: 1px solid var(--yellow-first-color);
+  background: transparent;
   color: var(--yellow-first-color);
 }
-
-.thema_blacknyellow a.thema_apply {
-  color: var(--text-second-color);
+.thema_blacknyellow .btn-thema-outline:hover {
+  background: var(--yellow-first-color);
+  color: var(--white-color);
+}
+.thema_blacknyellow .btn-thema-black {
+  border: 1px solid var(--text-first-color);
+  background: var(--white-color);
+  color: var(--text-first-color);
+}
+.thema_blacknyellow .btn-thema-black:hover {
+  color: var(--white-color);
+  border: 1px solid var(--yellow-first-color);
+  background: var(--yellow-first-color);
 }
 
 .thema_blacknyellow .thema_apply input::-webkit-input-placeholder {
@@ -350,19 +360,6 @@ iframe {
 }
 
 .thema_blacknyellow .thema_apply input::-ms-input-placeholder {
-  color: var(--yellow-first-color);
-}
-
-.thema_blacknyellow button.thema_apply {
-  background: var(--yellow-first-color);
-}
-
-.thema_blacknyellow .btn_post_more:hover {
-  background: var(--yellow-first-color);
-  color: var(--white-color);
-}
-
-.thema_blacknyellow .item_info .thema_apply {
   color: var(--yellow-first-color);
 }
 
@@ -391,13 +388,31 @@ iframe {
 }
 
 /* thema_red */
-.thema_red .title_post:hover {
+.thema_red .btn-thema {
+  background: var(--red-second-color);
+  color: var(--white-color);
+}
+.thema_red .btn-thema:hover {
+  opacity: 0.7;
+}
+.thema_red .btn-thema-outline {
+  border: 1px solid var(--red-second-color);
+  background: transparent;
   color: var(--red-second-color);
 }
-
-.thema_red a.thema_apply {
-  color: var(--text-second-color);
-  text-decoration: underline;
+.thema_red .btn-thema-outline:hover {
+  background: var(--red-second-color);
+  color: var(--white-color);
+}
+.thema_red .btn-thema-black {
+  border: 1px solid var(--text-first-color);
+  background: var(--white-color);
+  color: var(--text-first-color);
+}
+.thema_red .btn-thema-black:hover {
+  color: var(--white-color);
+  border: 1px solid var(--red-second-color);
+  background: var(--red-second-color);
 }
 
 .thema_red .thema_apply input::-webkit-input-placeholder {
@@ -409,19 +424,6 @@ iframe {
 }
 
 .thema_red .thema_apply input::-ms-input-placeholder {
-  color: var(--red-second-color);
-}
-
-.thema_red button.thema_apply {
-  background: var(--red-second-color);
-}
-
-.thema_red .btn_post_more:hover {
-  background: var(--red-second-color);
-  color: var(--white-color);
-}
-
-.thema_red .item_info .thema_apply {
   color: var(--red-second-color);
 }
 
@@ -450,13 +452,31 @@ iframe {
 }
 
 /* thema_blue */
-.thema_blue .title_post:hover {
+.thema_blue .btn-thema {
+  background: var(--blue-second-color);
+  color: var(--white-color);
+}
+.thema_blue .btn-thema:hover {
+  opacity: 0.7;
+}
+.thema_blue .btn-thema-outline {
+  border: 1px solid var(--blue-second-color);
+  background: transparent;
   color: var(--blue-second-color);
 }
-
-.thema_blue a.thema_apply {
-  color: var(--text-second-color);
-  text-decoration: underline;
+.thema_blue .btn-thema-outline:hover {
+  background: var(--blue-second-color);
+  color: var(--white-color);
+}
+.thema_blue .btn-thema-black {
+  border: 1px solid var(--text-first-color);
+  background: var(--white-color);
+  color: var(--text-first-color);
+}
+.thema_blue .btn-thema-black:hover {
+  color: var(--white-color);
+  border: 1px solid var(--blue-second-color);
+  background: var(--blue-second-color);
 }
 
 .thema_blue .thema_apply input::-webkit-input-placeholder {
@@ -468,19 +488,6 @@ iframe {
 }
 
 .thema_blue .thema_apply input::-ms-input-placeholder {
-  color: var(--blue-second-color);
-}
-
-.thema_blue button.thema_apply {
-  background: var(--blue-second-color);
-}
-
-.thema_blue .btn_post_more:hover {
-  background: var(--blue-second-color);
-  color: var(--white-color);
-}
-
-.thema_blue .item_info .thema_apply {
   color: var(--blue-second-color);
 }
 
@@ -509,13 +516,31 @@ iframe {
 }
 
 /* thema_yellow */
-.thema_yellow .title_post:hover {
+.thema_yellow .btn-thema {
+  background: var(--yellow-second-color);
+  color: var(--white-color);
+}
+.thema_yellow .btn-thema:hover {
+  opacity: 0.7;
+}
+.thema_yellow .btn-thema-outline {
+  border: 1px solid var(--yellow-second-color);
+  background: transparent;
   color: var(--yellow-second-color);
 }
-
-.thema_yellow a.thema_apply {
-  color: var(--text-second-color);
-  text-decoration: underline;
+.thema_yellow .btn-thema-outline:hover {
+  background: var(--yellow-second-color);
+  color: var(--white-color);
+}
+.thema_yellow .btn-thema-black {
+  border: 1px solid var(--text-first-color);
+  background: var(--white-color);
+  color: var(--text-first-color);
+}
+.thema_yellow .btn-thema-black:hover {
+  color: var(--white-color);
+  border: 1px solid var(--yellow-second-color);
+  background: var(--yellow-second-color);
 }
 
 .thema_yellow .thema_apply input::-webkit-input-placeholder {
@@ -527,19 +552,6 @@ iframe {
 }
 
 .thema_yellow .thema_apply input::-ms-input-placeholder {
-  color: var(--yellow-second-color);
-}
-
-.thema_yellow button.thema_apply {
-  background: var(--yellow-second-color);
-}
-
-.thema_yellow .btn_post_more:hover {
-  background: var(--yellow-second-color);
-  color: var(--white-color);
-}
-
-.thema_yellow .item_info .thema_apply {
   color: var(--yellow-second-color);
 }
 
@@ -1086,20 +1098,17 @@ html, body {
 	display:flex;
   padding:0 5%;
 }
-.main_post01 .btn_more {
-  display: inline;
-  width: inherit;
-  padding:5px 20px;
-  height: 40px;
-  color: var(--white-color);
-  font-weight: normal;
-  text-align:center;
-  cursor: pointer;
-  outline: none;
-  margin-bottom:0;
+.main_post01 .btn-wrap {
+  margin-top:20px
 }
 .main_post01 .text-wrap{
 	width:300px;
+}
+.main_post01 .text-wrap h2{
+  margin:8px 0;
+}
+.main_post01 .text-wrap p.desc{
+  margin-top:20px;
 }
 .main_post01 .book {
   position: relative;
@@ -1272,7 +1281,7 @@ box-shadow: 13px 13px 8px 0px rgba(151, 146, 153,0.6);
   align-items: center;
 }
 .post_style01 .list_item .preface .title {
-  font-size: 26px;
+  font-size: var(--font-size-03);
   margin-bottom: 10px;
 }
 .post_style01 .list_item .preface .author {
@@ -1284,7 +1293,7 @@ box-shadow: 13px 13px 8px 0px rgba(151, 146, 153,0.6);
   transition: transform 0.7s ease-in-out;
 }
 .post_style01 .list_item .preface .body p:first-child {
-  margin-bottom: 15px;
+  margin-bottom: 16px;
 }
 
 /* post_style02 */
@@ -1313,11 +1322,11 @@ box-shadow: 13px 13px 8px 0px rgba(151, 146, 153,0.6);
   -webkit-box-orient: vertical;
 }
 .post_style02 .list-wrap .list-item .title {
-  font-size: 24px;
+  font-size: var(--font-size-03);
   margin-bottom: 4px;
 }
 .post_style02 .list-wrap .list-item .category {
-  font-size: 14px;
+  font-size: var(--font-size-06);
   margin-bottom: 8px;
   color: var(--gray-first-color);
 }
@@ -2861,15 +2870,21 @@ box-shadow: 13px 13px 8px 0px rgba(151, 146, 153,0.6);
   text-align: center;
 }
 
-.box_tag_trail .tag_cont {
+.box_tag_trail .tag-wrap {
   padding: 0 20px;
 }
 
-.box_tag_trail .tag_cont a {
+.box_tag_trail .tag-wrap a {
   display: inline-block;
-  margin: 0 5px 5px 5px;
-  font-size: 16px;
-  text-decoration: underline;
+  font-size: 14px;
+  border: 1px solid var(--gray-third-color);
+  color: var(--text-second-color);
+  padding: 4px 16px;
+  margin-right: 4px;
+  margin-bottom: 4px;
+}
+.box_tag_trail .tag-wrap a:hover{
+  background-color: var(--gray-third-color)
 }
 
 /** 메인에서 more post 구현 */
