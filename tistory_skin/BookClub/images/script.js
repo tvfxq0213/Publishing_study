@@ -1,5 +1,6 @@
 (function($) {
 
+	
 	function common(){
 		var $gnb = $("#gnb"),
 			$header = $("#header"),
@@ -22,6 +23,14 @@
 				var scrollPos = $gnb.find(".current").prev().length ? $gnb.find(".current").prev().position().left : $gnb.find(".current").position().left;
 				$gnb.scrollLeft( scrollPos );
 			}
+			$('#loading').animate({ opacity: 0 }, 100,
+				function () {
+					$('#loading').hide();
+				});
+				$('img[alt="N"]').each(function(){
+					$(this).attr('src','https://tistory3.daumcdn.net/tistory/5082043/skin/images/new_ico_5.png');
+				});
+			
 		});
 
 		$search.on("click", function(){
@@ -408,3 +417,18 @@
 	if ( $("#tt-body-page").length ) postCover();
 
 })(jQuery);
+
+var fnPageLoadingShow = function () {
+	$('#loading').animate({ opacity: 100 }, 0,
+		function () {
+			$('#loading').show();
+		});
+}
+var fnPageLoadingHide = function () {
+	$('#loading').animate({ opacity: 0 }, 100,
+		function () {
+			$('#loading').hide();
+		});
+}
+
+
