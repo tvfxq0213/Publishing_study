@@ -22,6 +22,10 @@
 				var scrollPos = $gnb.find(".current").prev().length ? $gnb.find(".current").prev().position().left : $gnb.find(".current").position().left;
 				$gnb.scrollLeft( scrollPos );
 			}
+			$('#loading').animate({ opacity: 0 }, 100,
+				function () {
+					$('#loading').hide();
+				});
 		});
 
 		$search.on("click", function(){
@@ -408,3 +412,16 @@
 	if ( $("#tt-body-page").length ) postCover();
 
 })(jQuery);
+
+var fnPageLoadingShow = function () {
+	$('#loading').animate({ opacity: 100 }, 0,
+		function () {
+			$('#loading').show();
+		});
+}
+var fnPageLoadingHide = function () {
+	$('#loading').animate({ opacity: 0 }, 100,
+		function () {
+			$('#loading').hide();
+		});
+}
