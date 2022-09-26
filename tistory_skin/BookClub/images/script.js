@@ -27,13 +27,11 @@
 				function () {
 					$('#loading').hide();
 				});
-<<<<<<< HEAD
-=======
+
 				$('img[alt="N"]').each(function(){
 					$(this).attr('src','https://tistory3.daumcdn.net/tistory/5082043/skin/images/new_ico_5.png');
 				});
 			
->>>>>>> 9b89e68950a26752263d9180a3249dd53c96a9db
 		});
 
 		$search.on("click", function(){
