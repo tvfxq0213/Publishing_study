@@ -12,6 +12,8 @@
 
 	<link rel="alternate" type="application/rss+xml" title="[##_title_##]" href="[##_rss_url_##]" />
 	<link rel="shortcut icon" href="[##_blog_link_##]favicon.ico" />
+  <!-- Link Swiper's CSS -->
+
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
 	<link rel="stylesheet" href="./style.css" />
@@ -38,7 +40,7 @@
 
   <!-- aside-->
   <div id="mySidenav" class="sidenav">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="bi bi-x-lg"></i></a>
     <a href="#">About</a>
     <a href="#">Services</a>
     <a href="#">Clients</a>
@@ -47,14 +49,25 @@
 
   <!-- contents -->
   <main>
-    <section class="slide-style01">
-      슬라이더 스타일1
-    </section>
-    <section class="slide-style02">
-      슬라이더 스타일2
-    </section>
+     <!-- Swiper -->
+     <div class="swiper mainBanner">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide slide-style01">Slide 1</div>
+        <div class="swiper-slide slide-style02">Slide 2</div>
+        <div class="swiper-slide slide-style03">Slide 3</div>
+        <div class="swiper-slide">Slide 4</div>
+        <div class="swiper-slide">Slide 5</div>
+        <div class="swiper-slide">Slide 6</div>
+        <div class="swiper-slide">Slide 7</div>
+        <div class="swiper-slide">Slide 8</div>
+        <div class="swiper-slide">Slide 9</div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination fs-txt-4"></div>
+    </div>
+   
     <div class="container">
-      메인영역
 
       <section class="list-style01-area list-area">
         <h2 class="fs-title-3 text-center">list-style01 / Title </h2>
@@ -461,6 +474,53 @@
           그리드 형태의 리스트이며 대표 이미지만 목록에 나타나고 마우스 오버시 타이틀 명이 나타납니다.<br/>
           이미지는 1:1 비율로 크롭되며 한줄에 4개일때 최적화되어 있으므로 4의 배수로 목록에 나타나도록 설정해주세요.
         </p>
+
+        <ul class="list list-style06">
+          <li>
+            <a href="">         
+              <div class="img-wrap">
+                <img src="./images/dummy02.jpg" alt="title" title="title">
+              </div>
+              <div class="text-wrap">
+                <h4 class="fs-txt-3">게시글의 제목이 들어갑니다</h4>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <div class="img-wrap">
+                <img src="./images/dummy04.jpg" alt="title" title="title">
+              </div>
+              <div class="text-wrap">
+                <h4 class="fs-txt-3">게시글의 제목은 2줄을 넘지 않는게 보기에 좋습니다</h4>
+                
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <div class="img-wrap">
+                <img src="./images/dummy06.jpg" alt="title" title="title">
+              </div>
+              <div class="text-wrap">
+                <h4 class="fs-txt-3">게시글의 제목이 들어갑니다</h4>
+                
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="">         
+              <div class="img-wrap">
+                <img src="./images/dummy01.jpg" alt="title" title="title">
+              </div>
+              <div class="text-wrap">
+                <h4 class="fs-txt-3">게시글의 제목이 들어갑니다</h4>
+                
+              </div>
+            </a>
+          </li>
+          
+        </ul>
       </section>
 
 

@@ -11,3 +11,21 @@ function openNav() {
 function closeNav() {
   document.getElementById("mySidenav").classList.remove("active");
 }
+
+$(function(){
+  var swiper = new Swiper(".mainBanner", {
+    pagination: {
+      el: ".swiper-pagination",
+      type: "fraction",
+    },
+    loop: true,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    autoplay: {
+      delay: 4000,
+      disableOnInteraction: false,
+    },
+  });
+})
