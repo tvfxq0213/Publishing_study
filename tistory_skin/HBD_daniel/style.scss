@@ -28,7 +28,7 @@
 
 :root {
   /* color set */
-  --black-color:var(--black-color)000;
+  --black-color:#000;
   --text-first-color: #0b090a;
   --text-second-color: #161a1d;
   --red-first-color: #660708;
@@ -553,7 +553,28 @@ main{
     }
   }
 
- 
+}
+/* tag*/
+.tag-area{
+  padding:60px;
+  .fs-title-3{
+    margin-bottom:40px;
+  }
+}
+.tags{
+  a{
+    display:inline-block;
+    font-size:var(--font-size-06);
+    padding:4px 8px;
+    background:var(--white-color);
+    border:1px solid var(--black-color);
+    transition: all 0.3s;
+    margin-bottom:4px;
+    &:hover{
+      background:var(--black-color);
+      color:var(--white-color);
+    }
+  }
 }
 
 /* aside */

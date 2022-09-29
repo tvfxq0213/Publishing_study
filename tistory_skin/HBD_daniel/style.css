@@ -28,7 +28,7 @@
 
 :root {
   /* color set */
-  --black-color:var(--black-color)000;
+  --black-color:#000;
   --text-first-color: #0b090a;
   --text-second-color: #161a1d;
   --red-first-color: #660708;
@@ -627,6 +627,31 @@ main {
 
 .list-area .list.list-style03 li > a .text-wrap .fs-txt-5, .list-area .list.list-style05 li > a .text-wrap .fs-txt-5 {
   margin-top: 8px;
+}
+
+/* tag*/
+.tag-area {
+  padding: 60px;
+}
+
+.tag-area .fs-title-3 {
+  margin-bottom: 40px;
+}
+
+.tags a {
+  display: inline-block;
+  font-size: var(--font-size-06);
+  padding: 4px 8px;
+  background: var(--white-color);
+  border: 1px solid var(--black-color);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  margin-bottom: 4px;
+}
+
+.tags a:hover {
+  background: var(--black-color);
+  color: var(--white-color);
 }
 
 /* aside */
