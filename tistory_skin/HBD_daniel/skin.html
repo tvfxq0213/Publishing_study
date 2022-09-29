@@ -2,36 +2,37 @@
 <html lang="ko">
 
 <head>
-	<title>[##_page_title_##] :: [##_title_##]</title>
-	<meta name="title" content="[##_page_title_##] :: [##_title_##]" />
-	<meta name="description" Content="[##_desc_##]" />
-	<meta charset="utf-8" />
-	<meta name="viewport"
-		content="width=device-width, height=device-height, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+  <title>[##_page_title_##] :: [##_title_##]</title>
+  <meta name="title" content="[##_page_title_##] :: [##_title_##]" />
+  <meta name="description" Content="[##_desc_##]" />
+  <meta charset="utf-8" />
+  <meta name="viewport"
+    content="width=device-width, height=device-height, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
 
-	<link rel="alternate" type="application/rss+xml" title="[##_title_##]" href="[##_rss_url_##]" />
-	<link rel="shortcut icon" href="[##_blog_link_##]favicon.ico" />
+  <link rel="alternate" type="application/rss+xml" title="[##_title_##]" href="[##_rss_url_##]" />
+  <link rel="shortcut icon" href="[##_blog_link_##]favicon.ico" />
   <!-- Link Swiper's CSS -->
 
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-	<link rel="stylesheet" href="./style.css" />
-	
-	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
-	<script src="./images/common.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="./style.css" />
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+  <script src="./images/common.js"></script>
 </head>
+
 <body>
   <!-- header-->
   <header>
     <div class="container">
-      <i class="bi bi-list"  onclick="openNav()"></i>
-   
+      <i class="bi bi-list" onclick="openNav()"></i>
+
       <!-- btn_search 클릭하면 나옴 /-->
       <div class="search-wrap ms-auto">
-        <form action="" method="get">  
-          <input type="text" name="search" title="Search" placeholder="Search" value="" >              
+        <form action="" method="get">
+          <input type="text" name="search" title="Search" placeholder="Search" value="">
           <button class="btn_search"><i class="bi bi-search" alt="검색" title="검색"></i></button>
         </form>
       </div>
@@ -41,82 +42,216 @@
   <!-- aside-->
   <div id="mySidenav" class="sidenav">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="bi bi-x-lg"></i></a>
-    <a href="#">About</a>
-    <a href="#">Services</a>
-    <a href="#">Clients</a>
-    <a href="#">Contact</a>
+    <div class="sidebar-1">
+      <s_sidebar>
+        <s_sidebar_element>
+          <!-- 카테고리 -->
+          <nav class="category">
+            <ul class="tt_category">
+              <li class="">
+                <a class="link_tit" href="/category">
+                  분류 전체보기 <span class="c_cnt">(42)</span>
+
+                  <img src="https://tistory3.daumcdn.net/tistory/5082043/skin/images/new_ico_5.png" alt="N"
+                    style="vertical-align:middle;padding-left:2px;">
+                </a>
+
+                <ul class="category_list">
+                  <li class="">
+                    <a class="link_item" href="/category/Bookshelf">
+                      Bookshelf <span class="c_cnt">(43)</span>
+
+                      <img src="https://tistory3.daumcdn.net/tistory/5082043/skin/images/new_ico_5.png" alt="N"
+                        style="vertical-align:middle;padding-left:2px;">
+                    </a>
+
+                    <ul class="sub_category_list">
+                      <li class="">
+                        <a class="link_sub_item" href="/category/Bookshelf/2022">
+                          2022
+                          <span class="c_cnt">(26)</span>
+
+                          <img src="https://tistory3.daumcdn.net/tistory/5082043/skin/images/new_ico_5.png" alt="N"
+                            style="vertical-align:middle;padding-left:2px;">
+                        </a>
+                      </li>
+                      <li class="">
+                        <a class="link_sub_item" href="/category/Bookshelf/2021">
+                          2021
+                          <span class="c_cnt">(11)</span>
+
+                        </a>
+                      </li>
+                      <li class="">
+                        <a class="link_sub_item" href="/category/Bookshelf/2020">
+                          2020
+                          <span class="c_cnt">(6)</span>
+
+                        </a>
+                      </li>
+                    </ul>
+
+                  </li>
+                  <li class="">
+                    <a class="link_item" href="/category/Tistory%20Skin">
+                      Tistory Skin <span class="c_cnt">(0)</span>
+
+                    </a>
+
+                    <ul class="sub_category_list">
+                      <li class="">
+                        <a class="link_sub_item" href="/category/Tistory%20Skin/Custom%20Skin">
+                          Custom Skin
+                          <span class="c_cnt">(0)</span>
+
+                        </a>
+                      </li>
+                    </ul>
+
+                  </li>
+                  <li class="">
+                    <a class="link_item" href="/category/Music">
+                      Music <span class="c_cnt">(0)</span>
+
+                    </a>
+
+                    <ul class="sub_category_list">
+                      <li class="">
+                        <a class="link_sub_item" href="/category/Music/Girls">
+                          Girls
+                          <span class="c_cnt">(0)</span>
+
+                        </a>
+                      </li>
+                      <li class="">
+                        <a class="link_sub_item" href="/category/Music/Boys">
+                          Boys
+                          <span class="c_cnt">(0)</span>
+
+                        </a>
+                      </li>
+                    </ul>
+
+                  </li>
+                  <li class="">
+                    <a class="link_item" href="/category/gif">
+                      gif <span class="c_cnt">(0)</span>
+
+                    </a>
+
+
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+        </s_sidebar_element>
+      </s_sidebar>
+    </div>
+    <div class="sidebar-2">
+
+      <s_sidebar>
+        <s_sidebar_element>
+          <!-- 전체 방문자 -->
+          <div class="count">
+            <h2 class="fs-title-5">전체 방문자</h2>
+            <p class="fs-title-3 fw-bold">[##_count_total_##]</p>
+            <p>Today : [##_count_today_##]</p>
+            <p>Yesterday : [##_count_yesterday_##]</p>
+          </div>
+        </s_sidebar_element>
+        <s_sidebar_element>
+          <!-- 소셜 채널 -->
+          <div class="social-channel">
+            <ul>
+              <s_if_var_facebook-link>
+                <li class="facebook"><a href="[##_var_facebook-link_##]">
+                  <i class="bi bi-facebook"></i>
+                </a></li>
+              </s_if_var_facebook-link>
+              <s_if_var_instagram-link>
+                <li class="instagram"><a href="[##_var_instagram-link_##]">
+                  <i class="bi bi-instagram"></i>
+                </a></li>
+              </s_if_var_instagram-link>
+              <s_if_var_twitter-link>
+                <li class="twitter"><a href="[##_var_twitter-link_##]">
+                  <i class="bi bi-twitter"></i>
+                </a></li>
+              </s_if_var_twitter-link>
+              <s_if_var_youtube-link>
+                <li class="youtube"><a href="[##_var_youtube-link_##]">
+                  <i class="bi bi-youtube"></i>
+                </a></li>
+              </s_if_var_youtube-link>
+            </ul>
+          </div>
+        </s_sidebar_element>
+      </s_sidebar>
+    </div>
   </div>
 
   <!-- contents -->
   <main>
-     <!-- Swiper -->
-     <div class="swiper mainBanner">
+    <!-- Swiper -->
+    <div class="swiper mainBanner">
       <div class="swiper-wrapper">
-        <div class="swiper-slide slide-style01">Slide 1</div>
-        <div class="swiper-slide slide-style02">Slide 2</div>
-        <div class="swiper-slide slide-style03">Slide 3</div>
-        <div class="swiper-slide">Slide 4</div>
-        <div class="swiper-slide">Slide 5</div>
-        <div class="swiper-slide">Slide 6</div>
-        <div class="swiper-slide">Slide 7</div>
-        <div class="swiper-slide">Slide 8</div>
-        <div class="swiper-slide">Slide 9</div>
+        <div class="swiper-slide slide-style01" style="background-color:#fff; color:#161a1d !important;">
+          <div class="container">
+            <img src="./images/dummy05.jpg" alt="title" title="title" />
+            <h1>Banner Title이 들어가는 공간입니다.</h1>
+            <p class="fs-txt-3">
+              배너 설명이 들어가는 영역입니다. 안넣어도 상관없어요
+              해당배너는 가로가 긴 이미지가 들어가거나, 배경이 투명인 이미지가 들어가면 잘어울릴 것 같아요.
+            </p>
+            <a href="" style="color:#161a1d !important;">More <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="swiper-slide slide-style02">
+          <div style="background-color:#000000">
+            <img src="./images/dummy01.jpg" alt="title" title="title" />
+          </div>
+          <div style="background-color:#ffffff; color:#000000;">
+            <h1>HAPPY BIRTHDAY<br />KANGDANIEL</h1>
+            <p>
+              My dear Daniel<br />
+              Happy 27th birthday
+            </p>
+            <a href="" style="background-color:#000000; color:#ffffff;">
+              More
+            </a>
+          </div>
+        </div>
+        <div class="swiper-slide slide-style03"
+          style="color:#fff !important; background-image:url('./images/dummy04.jpg')">
+          <div class="container">
+            <h1>Banner Title이 들어가는 공간입니다.</h1>
+            <p class="fs-txt-3">
+              배너 설명이 들어가는 영역입니다. 안넣어도 상관없어요.
+              해당배너는 이미지가 전체 배경으로 깔리기 때문에 색이 다양한 이미지는 텍스트 영역과 겹치지 않도록 해야해요
+            </p>
+            <a href="" style="color:#fff !important;">More <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+
       </div>
       <div class="swiper-button-next"></div>
       <div class="swiper-button-prev"></div>
-      <div class="swiper-pagination fs-txt-4"></div>
     </div>
-   
-    <div class="container">
 
-    <section class="slide-style01" style="background-color:#fff; color:#161a1d !important;">
-      <div class="container" >
-        <img src="./images/dummy05.jpg" alt="title" title="title"/>
-        <h1>Banner Title이 들어가는 공간입니다.</h1>
-        <p class="fs-txt-3">
-          배너 설명이 들어가는 영역입니다. 안넣어도 상관없어요
-          해당배너는 가로가 긴 이미지가 들어가거나, 배경이 투명인 이미지가 들어가면 잘어울릴 것 같아요.
-        </p>
-        <a href="" style="color:#161a1d !important;">More <i class="bi bi-arrow-right"></i></a>
-      </div>
-    </section>
-    <section class="slide-style02">
-      <div style="background-color:#720026">
-        <img src="./images/dummy01.jpg" alt="title" title="title"/>
-      </div>
-      <div style="background-color:#ff9b54; color:#720026;">
-        <h1>HAPPY BIRTHDAY<br/>KANGDANIEL</h1>
-        <p>
-          My dear Daniel<br/>
-          Happy 27th birthday
-        </p>
-        <a href="" style="background-color:#720026; color:#ff9b54;">
-          More
-        </a>
-      </div>
-    </section>
-    <section class="slide-style03" style="color:#fff !important; background-image:url('./images/dummy04.jpg')">
-      <div class="container" >
-        <h1>Banner Title이 들어가는 공간입니다.</h1>
-        <p class="fs-txt-3">
-          배너 설명이 들어가는 영역입니다. 안넣어도 상관없어요.
-          해당배너는 이미지가 전체 배경으로 깔리기 때문에 색이 다양한 이미지는 텍스트 영역과 겹치지 않도록 해야해요
-        </p>
-        <a href="" style="color:#fff !important;">More <i class="bi bi-arrow-right"></i></a>
-      </div>
-    </section>
+
     <div class="container">
       <section class="list-style01-area list-area">
         <h2 class="fs-title-3 text-center">list-style01 / Title </h2>
         <p class="fs-txt-3">
-          해당 리스트의 설명이 들어가는 영역입니다. 설정하지 않으면 나오지 않습니다.<br/>
-          그리드 타입의 목록입니다 이미지는 1:1 비율의 정방형이며 다른 비율일 경우 크롭됩니다. 한줄에 3개일때 최적화 되어있습니다. <br/>
+          해당 리스트의 설명이 들어가는 영역입니다. 설정하지 않으면 나오지 않습니다.<br />
+          그리드 타입의 목록입니다 이미지는 1:1 비율의 정방형이며 다른 비율일 경우 크롭됩니다. 한줄에 3개일때 최적화 되어있습니다. <br />
           3의 배수 단위로 목록에 나타나도록 설정해주세요 :)
         </p>
 
         <ul class="list list-style01">
           <li>
-            <a href="">         
+            <a href="">
               <div class="img-wrap">
                 <img src="./images/dummy01.jpg" alt="title" title="title">
               </div>
@@ -138,10 +273,10 @@
           <li>
             <a href="">
               <div class="img-wrap">
-                <img src="./images/dummy05.jpg" alt="title" title="title">
+                <img src="./images/no-image.png" alt="title" title="title">
               </div>
               <h4 class="fs-title-4">게시글의 제목이 들어갑니다</h4>
-              <p class="fs-txt-4">게시글의 미리보기가 들어가는 영역입니다. 두줄이상 출력될경우 말줄임처리되어보입니다.</p>
+              <p class="fs-txt-4">게시글에 이미지가 없다면 디폴트 이미지가 들어가요 </p>
               <p class="fs-txt-5 text-gray">2022.12.10</p>
             </a>
           </li>
@@ -151,14 +286,14 @@
       <section class="list-style02-area list-area">
         <h2 class="fs-title-3">list-style02 / 제목 </h2>
         <p class="fs-txt-3">
-          해당 리스트의 설명이 들어가는 영역입니다. 설정하지 않으면 나오지 않습니다.<br/>
-          리스트 형태로 한줄에 1개의 게시물이 출력되는형태입니다.<br/>
-          이미지는 1:1 비율의 정방형 사이즈에 최적화 되어있고, 해당 비율과 다를경우 크롭됩니다. 왼쪽에 나타납니다.  <br/>
+          해당 리스트의 설명이 들어가는 영역입니다. 설정하지 않으면 나오지 않습니다.<br />
+          리스트 형태로 한줄에 1개의 게시물이 출력되는형태입니다.<br />
+          이미지는 1:1 비율의 정방형 사이즈에 최적화 되어있고, 해당 비율과 다를경우 크롭됩니다. 왼쪽에 나타납니다. <br />
         </p>
 
         <ul class="list list-style02">
           <li>
-            <a href="">         
+            <a href="">
               <div class="img-wrap">
                 <img src="./images/dummy02.jpg" alt="title" title="title">
               </div>
@@ -176,9 +311,12 @@
               </div>
               <div class="text-wrap">
                 <h4 class="fs-title-4">게시글의 제목은 1줄만 나오고 길면 말줄임처리가 됩니다</h4>
-                <p class="fs-txt-4">생각 대론 되는 게 입만 열면 다 반대 나무 잡고 퉤퉤퉤 문제야, 문제 Ooh! Ooh! Ooh!  의아해 모든 게  내게만 이런 일이 생기는 게-하는 일이 죄다 반대로 (yeah, yeah)-I'm just thinkin'
+                <p class="fs-txt-4">생각 대론 되는 게 입만 열면 다 반대 나무 잡고 퉤퉤퉤 문제야, 문제 Ooh! Ooh! Ooh! 의아해 모든 게 내게만 이런 일이 생기는 게-하는
+                  일이 죄다 반대로 (yeah, yeah)-I'm just thinkin'
                   우연이라 하기엔 해도 너무해-Wanna know the reason-알 수가 없네 (yeah)-세상을 반대로 사는 것 같애-다시 바꿔 놔야겠어
-                  거꾸로 돌려 모든 걸 (hey!)-위아래로 upside down (hey!)-온 세상을 뒤집어놔 (hey!)-I'm living in the upside down (hey!)-멋대로, 내 멋대로 모든 걸 (hey!)-Turn it till the lights go out (hey!)-온 세상을 뒤집어놔 (hey!)-I'm living in the upside down (hey!)-멋대로 내 멋대로 모든 걸</p>
+                  거꾸로 돌려 모든 걸 (hey!)-위아래로 upside down (hey!)-온 세상을 뒤집어놔 (hey!)-I'm living in the upside down (hey!)-멋대로,
+                  내 멋대로 모든 걸 (hey!)-Turn it till the lights go out (hey!)-온 세상을 뒤집어놔 (hey!)-I'm living in the upside
+                  down (hey!)-멋대로 내 멋대로 모든 걸</p>
                 <p class="fs-txt-5 text-gray">Category / 2022.12.10</p>
               </div>
             </a>
@@ -186,23 +324,25 @@
           <li>
             <a href="">
               <div class="img-wrap">
-                <img src="./images/dummy06.jpg" alt="title" title="title">
+                <img src="./images/no-image.png" alt="title" title="title">
               </div>
               <div class="text-wrap">
                 <h4 class="fs-title-4">게시글의 제목이 들어갑니다</h4>
-                <p class="fs-txt-4">게시글의 미리보기가 들어가는 영역입니다. 네줄이상 출력될경우 말줄임처리되어보입니다. 그런데 글을 2줄이상은 써야 좀 예쁘게 나오는것 같아요! </p>
+                <p class="fs-txt-4">게시글에 이미지가 없다면 왼쪽에 있는 기본 이미지가 들어가요 </p>
                 <p class="fs-txt-5 text-gray">2022.12.10</p>
               </div>
             </a>
           </li>
           <li>
-            <a href="">         
+            <a href="">
               <div class="img-wrap">
                 <img src="./images/dummy01.jpg" alt="title" title="title">
               </div>
               <div class="text-wrap">
                 <h4 class="fs-title-4">게시글의 제목이 들어갑니다</h4>
-                <p class="fs-txt-4">게시글의 미리보기가 들어가는 영역입니다. 네줄이상 출력될경우 말줄임처리되어보입니다. 그런데 글을 2줄이상은 써야 좀 예쁘게 나오는것 같아요!  생각 대론 되는 게 입만 열면 다 반대 나무 잡고 퉤퉤퉤 문제야, 문제 Ooh! Ooh! Ooh!  의아해 모든 게  내게만 이런 일이 생기는 게-하는 일이 죄다 반대로 (yeah, yeah)-I'm just thinkin'</p>
+                <p class="fs-txt-4">게시글의 미리보기가 들어가는 영역입니다. 네줄이상 출력될경우 말줄임처리되어보입니다. 그런데 글을 2줄이상은 써야 좀 예쁘게 나오는것 같아요! 생각 대론
+                  되는 게 입만 열면 다 반대 나무 잡고 퉤퉤퉤 문제야, 문제 Ooh! Ooh! Ooh! 의아해 모든 게 내게만 이런 일이 생기는 게-하는 일이 죄다 반대로 (yeah,
+                  yeah)-I'm just thinkin'</p>
                 <p class="fs-txt-5 text-gray">Category / 2022.12.10</p>
               </div>
             </a>
@@ -239,13 +379,13 @@
       <section class="list-style03-area list-area">
         <h2 class="fs-title-3">list-style03 / Title </h2>
         <p class="fs-txt-3">
-          해당 리스트의 설명이 들어가는 영역입니다. 설정하지 않으면 나오지 않습니다.<br/>
-          리스트 형태로 한줄에 1개의 게시물이 출력되는형태입니다.<br/>
-          이미지는 3:4 비율의 직사각형이며 해당 비율과 다를경우 크롭됩니다. 왼쪽에 나타납니다. <br/>
+          해당 리스트의 설명이 들어가는 영역입니다. 설정하지 않으면 나오지 않습니다.<br />
+          리스트 형태로 한줄에 1개의 게시물이 출력되는형태입니다.<br />
+          이미지는 3:4 비율의 직사각형이며 해당 비율과 다를경우 크롭됩니다. 왼쪽에 나타납니다. <br />
         </p>
         <ul class="list list-style03">
           <li>
-            <a href="">         
+            <a href="">
               <div class="img-wrap">
                 <img src="./images/dummy02.jpg" alt="title" title="title">
               </div>
@@ -263,9 +403,12 @@
               </div>
               <div class="text-wrap">
                 <h4 class="fs-title-4">게시글의 제목은 1줄만 나오고 길면 말줄임처리가 됩니다</h4>
-                <p class="fs-txt-4">생각 대론 되는 게 입만 열면 다 반대 나무 잡고 퉤퉤퉤 문제야, 문제 Ooh! Ooh! Ooh!  의아해 모든 게  내게만 이런 일이 생기는 게-하는 일이 죄다 반대로 (yeah, yeah)-I'm just thinkin'
+                <p class="fs-txt-4">생각 대론 되는 게 입만 열면 다 반대 나무 잡고 퉤퉤퉤 문제야, 문제 Ooh! Ooh! Ooh! 의아해 모든 게 내게만 이런 일이 생기는 게-하는
+                  일이 죄다 반대로 (yeah, yeah)-I'm just thinkin'
                   우연이라 하기엔 해도 너무해-Wanna know the reason-알 수가 없네 (yeah)-세상을 반대로 사는 것 같애-다시 바꿔 놔야겠어
-                  거꾸로 돌려 모든 걸 (hey!)-위아래로 upside down (hey!)-온 세상을 뒤집어놔 (hey!)-I'm living in the upside down (hey!)-멋대로, 내 멋대로 모든 걸 (hey!)-Turn it till the lights go out (hey!)-온 세상을 뒤집어놔 (hey!)-I'm living in the upside down (hey!)-멋대로 내 멋대로 모든 걸</p>
+                  거꾸로 돌려 모든 걸 (hey!)-위아래로 upside down (hey!)-온 세상을 뒤집어놔 (hey!)-I'm living in the upside down (hey!)-멋대로,
+                  내 멋대로 모든 걸 (hey!)-Turn it till the lights go out (hey!)-온 세상을 뒤집어놔 (hey!)-I'm living in the upside
+                  down (hey!)-멋대로 내 멋대로 모든 걸</p>
                 <p class="fs-txt-5 text-gray">Category / 2022.12.10</p>
               </div>
             </a>
@@ -283,13 +426,15 @@
             </a>
           </li>
           <li>
-            <a href="">         
+            <a href="">
               <div class="img-wrap">
                 <img src="./images/dummy01.jpg" alt="title" title="title">
               </div>
               <div class="text-wrap">
                 <h4 class="fs-title-4">게시글의 제목이 들어갑니다</h4>
-                <p class="fs-txt-4">게시글의 미리보기가 들어가는 영역입니다. 네줄이상 출력될경우 말줄임처리되어보입니다. 그런데 글을 2줄이상은 써야 좀 예쁘게 나오는것 같아요!  생각 대론 되는 게 입만 열면 다 반대 나무 잡고 퉤퉤퉤 문제야, 문제 Ooh! Ooh! Ooh!  의아해 모든 게  내게만 이런 일이 생기는 게-하는 일이 죄다 반대로 (yeah, yeah)-I'm just thinkin'</p>
+                <p class="fs-txt-4">게시글의 미리보기가 들어가는 영역입니다. 네줄이상 출력될경우 말줄임처리되어보입니다. 그런데 글을 2줄이상은 써야 좀 예쁘게 나오는것 같아요! 생각 대론
+                  되는 게 입만 열면 다 반대 나무 잡고 퉤퉤퉤 문제야, 문제 Ooh! Ooh! Ooh! 의아해 모든 게 내게만 이런 일이 생기는 게-하는 일이 죄다 반대로 (yeah,
+                  yeah)-I'm just thinkin'</p>
                 <p class="fs-txt-5 text-gray">Category / 2022.12.10</p>
               </div>
             </a>
@@ -325,13 +470,13 @@
       <section class="list-style04-area list-area">
         <h2 class="fs-title-3">list-style04 / 제목 </h2>
         <p class="fs-txt-3">
-          해당 리스트의 설명이 들어가는 영역입니다. 설정하지 않으면 나오지 않습니다.<br/>
-          리스트 형태로 한줄에 1개의 게시물이 출력되는형태입니다.<br/>
-          이미지는 1:1 비율의 정방형 사이즈에 최적화 되어있고, 해당 비율과 다를경우 크롭됩니다. 오른쪽에 나타납니다. <br/>
+          해당 리스트의 설명이 들어가는 영역입니다. 설정하지 않으면 나오지 않습니다.<br />
+          리스트 형태로 한줄에 1개의 게시물이 출력되는형태입니다.<br />
+          이미지는 1:1 비율의 정방형 사이즈에 최적화 되어있고, 해당 비율과 다를경우 크롭됩니다. 오른쪽에 나타납니다. <br />
         </p>
         <ul class="list list-style04">
           <li>
-            <a href="">         
+            <a href="">
               <div class="text-wrap">
                 <h4 class="fs-title-4">게시글의 제목이 들어갑니다</h4>
                 <p class="fs-txt-4">게시글의 미리보기가 들어가는 영역입니다. 네줄이상 출력될경우 말줄임처리되어보입니다. 그런데 글을 2줄이상은 써야 좀 예쁘게 나오는것 같아요! </p>
@@ -344,12 +489,15 @@
           </li>
           <li>
             <a href="">
-              
+
               <div class="text-wrap">
                 <h4 class="fs-title-4">게시글의 제목은 1줄만 나오고 길면 말줄임처리가 됩니다</h4>
-                <p class="fs-txt-4">생각 대론 되는 게 입만 열면 다 반대 나무 잡고 퉤퉤퉤 문제야, 문제 Ooh! Ooh! Ooh!  의아해 모든 게  내게만 이런 일이 생기는 게-하는 일이 죄다 반대로 (yeah, yeah)-I'm just thinkin'
+                <p class="fs-txt-4">생각 대론 되는 게 입만 열면 다 반대 나무 잡고 퉤퉤퉤 문제야, 문제 Ooh! Ooh! Ooh! 의아해 모든 게 내게만 이런 일이 생기는 게-하는
+                  일이 죄다 반대로 (yeah, yeah)-I'm just thinkin'
                   우연이라 하기엔 해도 너무해-Wanna know the reason-알 수가 없네 (yeah)-세상을 반대로 사는 것 같애-다시 바꿔 놔야겠어
-                  거꾸로 돌려 모든 걸 (hey!)-위아래로 upside down (hey!)-온 세상을 뒤집어놔 (hey!)-I'm living in the upside down (hey!)-멋대로, 내 멋대로 모든 걸 (hey!)-Turn it till the lights go out (hey!)-온 세상을 뒤집어놔 (hey!)-I'm living in the upside down (hey!)-멋대로 내 멋대로 모든 걸</p>
+                  거꾸로 돌려 모든 걸 (hey!)-위아래로 upside down (hey!)-온 세상을 뒤집어놔 (hey!)-I'm living in the upside down (hey!)-멋대로,
+                  내 멋대로 모든 걸 (hey!)-Turn it till the lights go out (hey!)-온 세상을 뒤집어놔 (hey!)-I'm living in the upside
+                  down (hey!)-멋대로 내 멋대로 모든 걸</p>
                 <p class="fs-txt-5 text-gray">Category / 2022.12.10</p>
               </div>
               <div class="img-wrap">
@@ -359,7 +507,7 @@
           </li>
           <li>
             <a href="">
-              
+
               <div class="text-wrap">
                 <h4 class="fs-title-4">게시글의 제목이 들어갑니다</h4>
                 <p class="fs-txt-4">게시글의 미리보기가 들어가는 영역입니다. 네줄이상 출력될경우 말줄임처리되어보입니다. 그런데 글을 2줄이상은 써야 좀 예쁘게 나오는것 같아요! </p>
@@ -371,11 +519,13 @@
             </a>
           </li>
           <li>
-            <a href="">         
-              
+            <a href="">
+
               <div class="text-wrap">
                 <h4 class="fs-title-4">게시글의 제목이 들어갑니다</h4>
-                <p class="fs-txt-4">게시글의 미리보기가 들어가는 영역입니다. 네줄이상 출력될경우 말줄임처리되어보입니다. 그런데 글을 2줄이상은 써야 좀 예쁘게 나오는것 같아요!  생각 대론 되는 게 입만 열면 다 반대 나무 잡고 퉤퉤퉤 문제야, 문제 Ooh! Ooh! Ooh!  의아해 모든 게  내게만 이런 일이 생기는 게-하는 일이 죄다 반대로 (yeah, yeah)-I'm just thinkin'</p>
+                <p class="fs-txt-4">게시글의 미리보기가 들어가는 영역입니다. 네줄이상 출력될경우 말줄임처리되어보입니다. 그런데 글을 2줄이상은 써야 좀 예쁘게 나오는것 같아요! 생각 대론
+                  되는 게 입만 열면 다 반대 나무 잡고 퉤퉤퉤 문제야, 문제 Ooh! Ooh! Ooh! 의아해 모든 게 내게만 이런 일이 생기는 게-하는 일이 죄다 반대로 (yeah,
+                  yeah)-I'm just thinkin'</p>
                 <p class="fs-txt-5 text-gray">Category / 2022.12.10</p>
               </div>
               <div class="img-wrap">
@@ -385,7 +535,7 @@
           </li>
           <li>
             <a href="">
-              
+
               <div class="text-wrap">
                 <h4 class="fs-title-4">게시글의 제목은 1줄만 나오고 길면 말줄임처리가 됩니다</h4>
                 <p class="fs-txt-4">게시글의 미리보기가 들어가는 영역입니다. 네줄이상 출력될경우 말줄임처리되어보입니다. 그런데 글을 2줄이상은 써야 좀 예쁘게 나오는것 같아요! </p>
@@ -398,7 +548,7 @@
           </li>
           <li>
             <a href="">
-              
+
               <div class="text-wrap">
                 <h4 class="fs-title-4">게시글의 제목이 들어갑니다</h4>
                 <p class="fs-txt-4">게시글의 미리보기가 들어가는 영역입니다. 네줄이상 출력될경우 말줄임처리되어보입니다. 그런데 글을 2줄이상은 써야 좀 예쁘게 나오는것 같아요! </p>
@@ -414,13 +564,13 @@
       <section class="list-style05-area list-area">
         <h2 class="fs-title-3">list-style05 / Title </h2>
         <p class="fs-txt-3">
-          해당 리스트의 설명이 들어가는 영역입니다. 설정하지 않으면 나오지 않습니다.<br/>
-          리스트 형태로 한줄에 1개의 게시물이 출력되는형태입니다.<br/>
-          이미지는 3:4 비율의 직사각형이며 해당 비율과 다를경우 크롭됩니다. 오른쪽에 나타납니다. <br/>
+          해당 리스트의 설명이 들어가는 영역입니다. 설정하지 않으면 나오지 않습니다.<br />
+          리스트 형태로 한줄에 1개의 게시물이 출력되는형태입니다.<br />
+          이미지는 3:4 비율의 직사각형이며 해당 비율과 다를경우 크롭됩니다. 오른쪽에 나타납니다. <br />
         </p>
         <ul class="list list-style05">
           <li>
-            <a href="">         
+            <a href="">
               <div class="text-wrap">
                 <h4 class="fs-title-4">게시글의 제목이 들어갑니다</h4>
                 <p class="fs-txt-4">게시글의 미리보기가 들어가는 영역입니다. 네줄이상 출력될경우 말줄임처리되어보입니다. 그런데 글을 2줄이상은 써야 좀 예쁘게 나오는것 같아요! </p>
@@ -433,12 +583,15 @@
           </li>
           <li>
             <a href="">
-              
+
               <div class="text-wrap">
                 <h4 class="fs-title-4">게시글의 제목은 1줄만 나오고 길면 말줄임처리가 됩니다</h4>
-                <p class="fs-txt-4">생각 대론 되는 게 입만 열면 다 반대 나무 잡고 퉤퉤퉤 문제야, 문제 Ooh! Ooh! Ooh!  의아해 모든 게  내게만 이런 일이 생기는 게-하는 일이 죄다 반대로 (yeah, yeah)-I'm just thinkin'
+                <p class="fs-txt-4">생각 대론 되는 게 입만 열면 다 반대 나무 잡고 퉤퉤퉤 문제야, 문제 Ooh! Ooh! Ooh! 의아해 모든 게 내게만 이런 일이 생기는 게-하는
+                  일이 죄다 반대로 (yeah, yeah)-I'm just thinkin'
                   우연이라 하기엔 해도 너무해-Wanna know the reason-알 수가 없네 (yeah)-세상을 반대로 사는 것 같애-다시 바꿔 놔야겠어
-                  거꾸로 돌려 모든 걸 (hey!)-위아래로 upside down (hey!)-온 세상을 뒤집어놔 (hey!)-I'm living in the upside down (hey!)-멋대로, 내 멋대로 모든 걸 (hey!)-Turn it till the lights go out (hey!)-온 세상을 뒤집어놔 (hey!)-I'm living in the upside down (hey!)-멋대로 내 멋대로 모든 걸</p>
+                  거꾸로 돌려 모든 걸 (hey!)-위아래로 upside down (hey!)-온 세상을 뒤집어놔 (hey!)-I'm living in the upside down (hey!)-멋대로,
+                  내 멋대로 모든 걸 (hey!)-Turn it till the lights go out (hey!)-온 세상을 뒤집어놔 (hey!)-I'm living in the upside
+                  down (hey!)-멋대로 내 멋대로 모든 걸</p>
                 <p class="fs-txt-5 text-gray">Category / 2022.12.10</p>
               </div>
               <div class="img-wrap">
@@ -448,7 +601,7 @@
           </li>
           <li>
             <a href="">
-              
+
               <div class="text-wrap">
                 <h4 class="fs-title-4">게시글의 제목이 들어갑니다</h4>
                 <p class="fs-txt-4">게시글의 미리보기가 들어가는 영역입니다. 네줄이상 출력될경우 말줄임처리되어보입니다. 그런데 글을 2줄이상은 써야 좀 예쁘게 나오는것 같아요! </p>
@@ -460,11 +613,13 @@
             </a>
           </li>
           <li>
-            <a href="">         
-              
+            <a href="">
+
               <div class="text-wrap">
                 <h4 class="fs-title-4">게시글의 제목이 들어갑니다</h4>
-                <p class="fs-txt-4">게시글의 미리보기가 들어가는 영역입니다. 네줄이상 출력될경우 말줄임처리되어보입니다. 그런데 글을 2줄이상은 써야 좀 예쁘게 나오는것 같아요!  생각 대론 되는 게 입만 열면 다 반대 나무 잡고 퉤퉤퉤 문제야, 문제 Ooh! Ooh! Ooh!  의아해 모든 게  내게만 이런 일이 생기는 게-하는 일이 죄다 반대로 (yeah, yeah)-I'm just thinkin'</p>
+                <p class="fs-txt-4">게시글의 미리보기가 들어가는 영역입니다. 네줄이상 출력될경우 말줄임처리되어보입니다. 그런데 글을 2줄이상은 써야 좀 예쁘게 나오는것 같아요! 생각 대론
+                  되는 게 입만 열면 다 반대 나무 잡고 퉤퉤퉤 문제야, 문제 Ooh! Ooh! Ooh! 의아해 모든 게 내게만 이런 일이 생기는 게-하는 일이 죄다 반대로 (yeah,
+                  yeah)-I'm just thinkin'</p>
                 <p class="fs-txt-5 text-gray">Category / 2022.12.10</p>
               </div>
               <div class="img-wrap">
@@ -474,7 +629,7 @@
           </li>
           <li>
             <a href="">
-              
+
               <div class="text-wrap">
                 <h4 class="fs-title-4">게시글의 제목은 1줄만 나오고 길면 말줄임처리가 됩니다</h4>
                 <p class="fs-txt-4">게시글의 미리보기가 들어가는 영역입니다. 네줄이상 출력될경우 말줄임처리되어보입니다. 그런데 글을 2줄이상은 써야 좀 예쁘게 나오는것 같아요! </p>
@@ -487,7 +642,7 @@
           </li>
           <li>
             <a href="">
-              
+
               <div class="text-wrap">
                 <h4 class="fs-title-4">게시글의 제목이 들어갑니다</h4>
                 <p class="fs-txt-4">게시글의 미리보기가 들어가는 영역입니다. 네줄이상 출력될경우 말줄임처리되어보입니다. 그런데 글을 2줄이상은 써야 좀 예쁘게 나오는것 같아요! </p>
@@ -504,16 +659,16 @@
       <section class="list-style06-area list-area">
         <h2 class="fs-title-3">list-style06 / 제목 </h2>
         <p class="fs-txt-3">
-          해당 리스트의 설명이 들어가는 영역입니다. 설정하지 않으면 나오지 않습니다.<br/>
-          그리드 형태의 리스트이며 대표 이미지만 목록에 나타나고 마우스 오버시 타이틀 명이 나타납니다.<br/>
+          해당 리스트의 설명이 들어가는 영역입니다. 설정하지 않으면 나오지 않습니다.<br />
+          그리드 형태의 리스트이며 대표 이미지만 목록에 나타나고 마우스 오버시 타이틀 명이 나타납니다.<br />
           이미지는 1:1 비율로 크롭되며 한줄에 4개일때 최적화되어 있으므로 4의 배수로 목록에 나타나도록 설정해주세요.
         </p>
 
         <ul class="list list-style06">
           <li>
-            <a href="">         
+            <a href="">
               <div class="img-wrap">
-                <img src="./images/dummy02.jpg" alt="title" title="title">
+                <img src="./images/no-image-black.png" alt="title" title="title">
               </div>
               <div class="text-wrap">
                 <h4 class="fs-txt-3">게시글의 제목이 들어갑니다</h4>
@@ -527,7 +682,7 @@
               </div>
               <div class="text-wrap">
                 <h4 class="fs-txt-3">게시글의 제목은 2줄을 넘지 않는게 보기에 좋습니다</h4>
-                
+
               </div>
             </a>
           </li>
@@ -538,22 +693,22 @@
               </div>
               <div class="text-wrap">
                 <h4 class="fs-txt-3">게시글의 제목이 들어갑니다</h4>
-                
+
               </div>
             </a>
           </li>
           <li>
-            <a href="">         
+            <a href="">
               <div class="img-wrap">
                 <img src="./images/dummy01.jpg" alt="title" title="title">
               </div>
               <div class="text-wrap">
                 <h4 class="fs-txt-3">게시글의 제목이 들어갑니다</h4>
-                
+
               </div>
             </a>
           </li>
-          
+
         </ul>
       </section>
 
@@ -569,12 +724,12 @@
           <a href="/tag/YELLOW">YELLOW</a>
           <a href="/tag/MAGENTA">MAGENTA</a>
           <a href="/tag/CYAN">CYAN</a>
-          <a href="/tag/ColorOnMe">ColorOnMe</a>  
-      </div>
+          <a href="/tag/ColorOnMe">ColorOnMe</a>
+        </div>
       </section>
 
 
-      
+
     </div>
   </main>
 
@@ -589,7 +744,7 @@
     <div class="container">
       footer
     </div>
-    
+
   </footer>
 </body>
 
