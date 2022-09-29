@@ -659,11 +659,11 @@ main {
 .sidenav {
   box-sizing: border-box;
   height: 100%;
-  width: 0;
+  width: 320px;
   position: fixed;
   z-index: 10;
   top: 0;
-  left: 0;
+  left: -340px;
   background-color: #fff;
   overflow-x: hidden;
   transition: 0.5s;
@@ -671,7 +671,7 @@ main {
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 .sidenav.active {
-  width: 320px;
+  left: 0px;
 }
 .sidenav a {
   text-decoration: none;
