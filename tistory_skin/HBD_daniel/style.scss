@@ -294,6 +294,116 @@ main{
 
       
 
+.slide-style01{
+  height:680px;
+  width:100%;
+  padding:80px 0 0;
+  .container{
+    position:relative;
+    padding-right:0;
+    height:100%;
+    > *{
+      position:relative;
+    }
+    img{
+      position:absolute;
+      right:0;
+      bottom:0;
+      margin-left:auto;
+      max-width:80%;
+      max-height:560px;
+      z-index:0;
+    }
+    h1{
+      font-family: 'LeferiPointOblique';
+      width:56%;
+      font-size:54px;
+      font-weight:400;
+      word-break: keep-all;
+    }
+    .fs-txt-3{
+      margin-top:30px;
+      width:50%;
+      word-break: keep-all;
+      line-height:1.5;
+    }
+    a{
+      position:absolute;
+      left:16px;
+      bottom:24px;
+      font-size:24px;
+    }
+  }
+}
+.slide-style02{
+  display:flex;
+  height:680px;
+  > div{
+    height:100%;
+    width:50%;
+    display:inline-flex;
+    align-items: center;
+    justify-content: center;    
+    &:first-child{
+      img{
+        max-width: 60%;
+        max-height: 76%;
+      }
+    }
+    &:last-child{
+      text-align:center;
+      flex-direction: column;
+      h1{
+        font-size:40px;
+        font-family: 'LeferiPointOblique';
+      }
+      p{
+        margin-top:20px;
+        font-size:16px; 
+      }
+
+      a{
+        min-width:100px;
+        padding:8px 20px;
+        margin-top:36px;
+      }
+    }
+  }
+}
+.slide-style03{
+  height:680px;
+  width:100%;
+  background-position: center center;
+  background-size:cover;
+  background-repeat: no-repeat;
+  display:flex;
+  align-items: center;
+  position:relative;
+
+
+  .container{
+    padding-right:0;
+    h1{
+      font-family: 'LeferiPointOblique';
+      width:56%;
+      font-size:54px;
+      font-weight:400;
+      word-break: keep-all;
+    }
+    .fs-txt-3{
+      margin-top:30px;
+      width:50%;
+      word-break: keep-all;
+      line-height:1.5;
+    }
+    a{
+      position:absolute;
+      left:calc(50% - 486px);
+      bottom:30px;
+      font-size:24px;
+    }
+  }
+}
 
 /* list style */
 .list-area{
@@ -552,7 +662,28 @@ main{
     }
   }
 
- 
+}
+/* tag*/
+.tag-area{
+  padding:60px;
+  .fs-title-3{
+    margin-bottom:40px;
+  }
+}
+.tags{
+  a{
+    display:inline-block;
+    font-size:var(--font-size-06);
+    padding:4px 8px;
+    background:var(--white-color);
+    border:1px solid var(--black-color);
+    transition: all 0.3s;
+    margin-bottom:4px;
+    &:hover{
+      background:var(--black-color);
+      color:var(--white-color);
+    }
+  }
 }
 
 /* aside */

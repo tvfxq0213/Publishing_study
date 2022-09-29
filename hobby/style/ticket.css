@@ -6,7 +6,7 @@ html, body {
   margin: 0;
   width: 100%;
   height: 100%;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 p, h1, h2, h3, h4, h5, h6 {
@@ -19,13 +19,17 @@ a {
 }
 
 div {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .container {
   padding: 50px;
 }
+
 .container .d-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -34,76 +38,104 @@ div {
   margin: 5% auto;
   width: 475px;
 }
+
 .m-ticket-01 .ticket-top {
   background: #4474f8;
   color: #ffffff;
   border-radius: 16px;
   padding: 25px 30px;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+          box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
 }
+
 .m-ticket-01 .ticket-top .barcodeWrap {
   text-align: center;
 }
+
 .m-ticket-01 .ticket-top .barcodeWrap img {
   margin: 10px auto;
   width: 90%;
   height: 70px;
 }
+
 .m-ticket-01 .ticket-top .barcodeWrap p {
   font-size: 10px;
   text-align: right;
 }
+
 .m-ticket-01 .ticket-bottom {
   background: #ffffff;
   padding: 30px 30px;
   border-radius: 16px;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+          box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
 }
+
 .m-ticket-01 .ticket-bottom .d-flex p {
   text-align: center;
 }
+
 .m-ticket-01 .ticket-bottom .d-flex.info:nth-of-type(1) h3 {
   font-size: 40px;
 }
+
 .m-ticket-01 .ticket-bottom .d-flex.info:nth-of-type(1) p {
   font-size: 12px;
 }
+
 .m-ticket-01 .ticket-bottom .d-flex.col-3 {
   margin: 20px 0;
   text-align: center;
-  justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
+
 .m-ticket-01 .ticket-bottom .d-flex.col-3 label {
   font-size: 12px;
 }
+
 .m-ticket-01 .ticket-bottom .d-flex.col-3 h4 {
   font-size: 18px;
   font-weight: 500;
 }
+
 .m-ticket-01 .d-flex {
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+
 .m-ticket-01 .d-flex.align-top {
-  align-items: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
+
 .m-ticket-01 .info:nth-of-type(1) {
   margin-bottom: 20px;
 }
+
 .m-ticket-01 .info label {
   font-size: 14px;
 }
+
 .m-ticket-01 .info h3 {
   font-size: 30px;
   font-weight: 400;
 }
+
 .m-ticket-01 .info h4 {
   font-weight: 400;
   font-size: 16px;
 }
+
 .m-ticket-01 label {
   font-weight: 100;
 }
+
 .m-ticket-01 .btn {
   margin: 10px 0 15px;
   width: 100%;
@@ -117,11 +149,13 @@ div {
 
 /* mobile ticket 02 */
 .m-ticket-02 {
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+          box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
   margin: 5% auto;
   width: 475px;
   border-radius: 16px;
 }
+
 .m-ticket-02 .ticket-top {
   background: #961210;
   color: #ffffff;
@@ -131,57 +165,77 @@ div {
   border-top-left-radius: 16px;
   border-top-right-radius: 16px;
 }
+
 .m-ticket-02 .ticket-middle {
   background: #ffffff;
   padding: 25px 30px;
 }
+
 .m-ticket-02 .ticket-middle .d-flex {
-  align-items: center;
-  justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
+
 .m-ticket-02 .ticket-middle .d-flex.flight {
   text-align: center;
   margin-bottom: 20px;
 }
+
 .m-ticket-02 .ticket-middle .d-flex.flight h3 {
   font-size: 48px;
   font-weight: 500;
 }
+
 .m-ticket-02 .ticket-middle .d-flex.flight p {
   font-size: 12px;
 }
+
 .m-ticket-02 .ticket-middle .d-flex.flight svg {
-  transform: scale(2);
+  -webkit-transform: scale(2);
+          transform: scale(2);
 }
+
 .m-ticket-02 .ticket-middle .d-flex.flight svg g [fill] {
   color: #222743;
 }
+
 .m-ticket-02 .ticket-middle .d-flex.info {
   margin: 60px 0;
 }
+
 .m-ticket-02 .ticket-middle .d-flex.info h3 {
   font-size: 30px;
   font-weight: 500;
 }
+
 .m-ticket-02 .ticket-middle .d-flex.info label {
   font-size: 14px;
   font-weight: 300;
 }
+
 .m-ticket-02 .ticket-middle .d-flex.col-3 {
   margin: 15px 0;
 }
+
 .m-ticket-02 .ticket-middle .d-flex.col-3 > div {
   width: 33.33%;
 }
+
 .m-ticket-02 .ticket-middle .d-flex.col-3 label {
   text-align: left;
   font-weight: 300;
   font-size: 14px;
 }
+
 .m-ticket-02 .ticket-middle .d-flex.col-3 h4 {
   font-weight: normal;
   font-size: 20px;
 }
+
 .m-ticket-02 .ticket-bottom {
   background: #ffffff;
   border-bottom-left-radius: 16px;
@@ -189,10 +243,12 @@ div {
   padding: 20px 30px 30px;
   text-align: center;
 }
+
 .m-ticket-02 .ticket-bottom img {
   width: 90%;
   height: 70px;
 }
+
 .m-ticket-02 hr {
   margin: 0;
   padding: 10px 0;
@@ -202,65 +258,91 @@ div {
 
 /* mobile ticket 03 */
 .m-ticket-03 {
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+          box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
   margin: 5% auto;
   width: 475px;
-  font-family: "Gothic A1", sans-serif;
+  font-family: 'Gothic A1', sans-serif;
 }
+
 .m-ticket-03 label {
   color: #666666;
   display: block;
   margin-bottom: 5px;
   font-weight: 300;
 }
+
 .m-ticket-03 .ticket-top {
   background: #ffd700;
   padding: 16px;
 }
+
 .m-ticket-03 .ticket-middle {
   padding: 30px;
   text-align: center;
 }
+
 .m-ticket-03 .ticket-middle img {
   margin: 50px auto 50px;
   display: block;
   width: 120px;
   height: 120px;
 }
+
 .m-ticket-03 .ticket-bottom {
   padding: 30px;
 }
+
 .m-ticket-03 .ticket-bottom .d-flex.flight {
-  align-items: center;
-  justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   text-align: center;
   margin: 0px 0 30px;
 }
+
 .m-ticket-03 .ticket-bottom .d-flex.flight label {
   font-size: 14px;
 }
+
 .m-ticket-03 .ticket-bottom .d-flex.flight h2 {
   font-size: 48px;
   font-weight: 500;
 }
+
 .m-ticket-03 .ticket-bottom .d-flex.flight p {
   font-size: 12px;
   color: #666666;
 }
+
 .m-ticket-03 .ticket-bottom .d-flex.flight svg {
-  transform: scale(2);
+  -webkit-transform: scale(2);
+          transform: scale(2);
 }
+
 .m-ticket-03 .ticket-bottom .d-flex.info {
-  align-items: center;
-  justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin: 20px 0;
 }
+
 .m-ticket-03 .ticket-bottom .d-flex.info > div {
-  flex: 1 1;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1;
+          flex: 1 1;
 }
+
 .m-ticket-03 .ticket-bottom .d-flex.info > div label {
   font-size: 14px;
 }
+
 .m-ticket-03 .ticket-bottom .d-flex.info > div h4 {
   font-weight: 500;
   font-size: 20px;
@@ -268,31 +350,44 @@ div {
 
 .ticket-01 {
   margin: 5% auto;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+          box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
   width: 700px;
   border-radius: 16px;
   background: #961210;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   padding-bottom: 20px;
 }
+
 .ticket-01 .contents {
   background: #ffffff;
   padding: 30px 20px;
 }
+
 .ticket-01 .ticket-left {
   width: 450px;
 }
+
 .ticket-01 .ticket-left .d-flex:nth-of-type(1) {
   padding: 20px;
   color: #ffffff;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
+
 .ticket-01 .ticket-right {
   width: 250px;
 }
+
 .ticket-01 .ticket-right .d-flex:nth-of-type(1) {
   width: 100%;
   padding: 20px;
   color: #ffffff;
-  justify-content: center;
-}/*# sourceMappingURL=ticket.css.map */
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+/*# sourceMappingURL=ticket.css.map */
