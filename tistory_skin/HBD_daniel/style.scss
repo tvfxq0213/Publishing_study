@@ -798,8 +798,77 @@ footer{
   background:var(--black-color);
   color:var(--white-color);
 }
-
-
+@media screen and (min-width: 761px) and (max-width: 1000px) { 
+    /* banner */
+  .mainBanner {
+    height: 540px;
+    margin-bottom:60px;
+  
+    .swiper-slide {
+    
+      &.slide-style01{
+        height:540px;
+        padding:60px 0 0;
+        .container{
+       
+          img{
+            max-height:460px;
+          }
+          h1{
+            width:60%;
+            font-size:36px;
+          }
+          .fs-txt-3{
+            margin-top:24px;         
+          }
+          a{
+            position:absolute;
+            left:16px;
+            bottom:24px;
+            font-size:18px;
+          }
+        }
+      }
+      &.slide-style02{
+        height:540px;
+        > div{
+          &:last-child{
+            h1{
+              font-size:32px;
+            }
+            p{
+              margin-top:20px;
+              font-size:16px; 
+            }
+      
+            a{
+              margin-top:32px;
+            }
+          }
+        }
+      }
+      &.slide-style03{
+        height:540px;    
+        .container{
+          h1{
+            width:60%;
+            font-size:36px;
+          }
+          .fs-txt-3{
+            margin-top:24px;
+          }
+          a{
+            position:absolute;
+            left:16px;
+            bottom:30px;
+            font-size:18px;
+          }
+        }
+      }
+    }
+    
+  }
+}
 @media screen and (max-height: 760px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
