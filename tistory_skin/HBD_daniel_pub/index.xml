@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<skin>
+	<information>
+		<name>for DANITY</name>
+		<version>1.0</version>
+		<description>
+			<![CDATA[ 다니엘의 27번째 생일을 축하하며 배포하는 티스토리 스킨입니다.
+      다니티분들이 티스토리 블로그를 시작하실 때 도움이 되었으면 좋겠어요.
+      재배포는 싫어요 :)
+       ]]>
+		</description>
+		<license>
+			<![CDATA[ MIT License ]]>
+		</license>
+	</information>
+	<author>
+		<name>HANE</name>
+		<homepage>https://hane-j.tistory.com/</homepage>
+		<email>thattheday@gmail.com</email>
+	</author>
+	<default>
+    <entriesOnPage>4</entriesOnPage>
+		<entriesOnList>4</entriesOnList>
+		<recentEntries>5</recentEntries>
+		<recentComments>4</recentComments>
+		<recentTrackbacks>4</recentTrackbacks>
+		<itemsOnGuestbook>10</itemsOnGuestbook>
+		<tagsInCloud>30</tagsInCloud>
+		<sortInCloud>3</sortInCloud>
+		<expandComment>1</expandComment>
+		<lengthOfRecentNotice>25</lengthOfRecentNotice>
+		<lengthOfRecentEntry>27</lengthOfRecentEntry>
+		<lengthOfRecentComment>30</lengthOfRecentComment>
+		<lengthOfRecentTrackback>30</lengthOfRecentTrackback>
+		<lengthOfLink>30</lengthOfLink>
+		<showListOnCategory>1</showListOnCategory>
+		<showListOnArchive>1</showListOnArchive>
+		<tree>
+			<color>000000</color>
+			<bgColor>ffffff</bgColor>
+			<activeColor>000000</activeColor>
+			<activeBgColor>eeeeee</activeBgColor>
+			<labelLength>27</labelLength>
+			<showValue>0</showValue>
+		</tree>
+		<contentWidth>1920</contentWidth>
+  </default>
+</skin>
