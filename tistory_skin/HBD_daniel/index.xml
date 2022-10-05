@@ -45,4 +45,82 @@
 		</tree>
 		<contentWidth>1920</contentWidth>
   </default>
+  <cover>
+		<item>
+			<name>list-style01</name>
+			<label><![CDATA[그리드형 리스트]]></label>
+			<description><![CDATA[이미지는 1:1 비율의 정방형이며 다른 비율일 경우 크롭됩니다. 한줄에 3개일때 최적화 되어있습니다..]]></description>
+		</item>
+		<item>
+			<name>list-style02</name>
+			<label><![CDATA[목록형 - 01]]></label>
+			<description><![CDATA[ 리스트 형태 - 01 이미지는 왼쪽에 1:1 비율의 정방형 사이즈에 최적화 되어있고, 해당 비율과 다를경우 크롭]]></description>
+		</item>
+		<item>
+			<name>list-style03</name>
+			<label><![CDATA[목록형 - 02]]></label>
+			<description><![CDATA[리스트 형태 - 02 이미지는 왼쪽에 3:4 비율의 정방형 사이즈에 최적화 되어있고, 해당 비율과 다를경우 크롭.]]></description>
+		</item>
+		<item>
+			<name>list-style04</name>
+			<label><![CDATA[목록형 - 03]]></label>
+			<description><![CDATA[리스트 형태 - 03 이미지는 왼쪽에 4:3 비율의 정방형 사이즈에 최적화 되어있고, 해당 비율과 다를경우 크롭]]></description>
+		</item>
+    <item>
+			<name>list-style05</name>
+			<label><![CDATA[목록형 - 04]]></label>
+			<description><![CDATA[ 리스트 형태 - 04 이미지는 오른쪽에 1:1 비율의 정방형 사이즈에 최적화 되어있고, 해당 비율과 다를경우 크롭]]></description>
+		</item>
+		<item>
+			<name>list-style06</name>
+			<label><![CDATA[목록형 - 05]]></label>
+			<description><![CDATA[리스트 형태 - 05 이미지는 오른쪽에 3:4 비율의 정방형 사이즈에 최적화 되어있고, 해당 비율과 다를경우 크롭.]]></description>
+		</item>
+		<item>
+			<name>list-style07</name>
+			<label><![CDATA[목록형 - 06]]></label>
+			<description><![CDATA[리스트 형태 - 06 이미지는 오른쪽에 4:3 비율의 정방형 사이즈에 최적화 되어있고, 해당 비율과 다를경우 크롭]]></description>
+		</item>
+		<item>
+			<name>list-style08</name>
+			<label><![CDATA[그리드형 섬네일 리스트]]></label>
+			<description><![CDATA[이미지는 1:1 비율로 크롭되며 한줄에 4개일때 최적화, 마우스 오버시 제목이 나타남]]></description>
+		</item>
+	</cover>
+  <variables>
+		<variable>
+			<name>logo</name>
+			<label><![CDATA[ 로고(높이 64px) ]]></label>
+			<description><![CDATA[]]></description>
+			<type>IMAGE</type>
+			<option />
+			<default></default>
+		</variable>
+		<variable>
+			<name>point-color</name>
+			<label><![CDATA[ 포인트컬러 ]]></label>
+			<description><![CDATA[]]></description>
+			<type>COLOR</type>
+			<option />
+			<default>#04beb8</default>
+		</variable>
+    <variablegroup name="리스트">
+			<variable>
+				<name>list-type</name>
+				<label><![CDATA[ 리스트 타입 ]]></label>
+				<description><![CDATA[]]></description>
+				<type>SELECT</type>
+				<option><![CDATA[[{"name":"list-style01","label":"그리드형 리스트","value":"list-style01"}, {"name":"list-style02","label":"리스트형태-01","value":"list-style02"}, {"name":"list-style03","label":"리스트형태-02","value":"list-style03"}, {"name":"list-style04","label":"리스트형태-03","value":"list-style04"},{"name":"list-style05","label":"리스트형태-04","value":"list-style05"},{"name":"list-style06","label":"리스트형태-05","value":"list-style06"},{"name":"list-style07","label":"리스트형태-06","value":"list-style07"},{"name":"list-style08","label":"그리드형 썸네일 형태","value":"list-style08"}]]]></option>
+				<default></default>
+			</variable>
+			<variable>
+				<name>view-more</name>
+				<label><![CDATA[ 더보기 방식 ]]></label>
+				<description><![CDATA[]]></description>
+				<type>SELECT</type>
+				<option><![CDATA[[{"name":"paging-number","label":"페이징","value":"paging-number"}, {"name":"paging-view-more","label":"더보기","value":" paging-view-more"}]]]></option>
+				<default>paging-number</default>
+			</variable>
+		</variablegroup>
+  </variables>
 </skin>

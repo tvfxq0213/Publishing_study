@@ -930,7 +930,7 @@
   <main class="post">
     <div class="post_header">
       <div class="container">
-        <h1 class="fs-title-3">포스트의 제목이 들어가는 영역입니다. </h1>
+        <h1 class="fs-title-2">포스트의 제목이 들어가는 영역입니다. </h1>
         <a href="" class="category">[##_article_rep_category_##]</a>
         <p>
           <span class="author">by [##_article_rep_author_##]</span>
@@ -945,25 +945,26 @@
     <div class="container">
       [##_article_rep_desc_##]
     </div>
-
-    <s_paging>
-      <div class="paging">
-        <a [##_prev_page_##] class="[##_no_more_prev_##]"><i class="bi bi-arrow-left"></i></a>
-        <span class="numbox">
-          <s_paging_rep>
-            <a [##_paging_rep_link_##] class="num">[[##_paging_rep_link_num_##]]</a>
-          </s_paging_rep>
-        </span>
-        <a [##_next_page_##] class="[##_no_more_next_##]"><i class="bi bi-arrow-right"></i></a>
-      </div>
-    </s_paging>
+    <div class="container">
+      <s_paging>
+        <div class="pagination">
+          <a [##_prev_page_##] class="[##_no_more_prev_##]"><i class="bi bi-arrow-left"></i></a>
+          <span class="numbox">
+            <s_paging_rep>
+              <a [##_paging_rep_link_##] class="num">[[##_paging_rep_link_num_##]]</a>
+            </s_paging_rep>
+          </span>
+          <a [##_next_page_##] class="[##_no_more_next_##]"><i class="bi bi-arrow-right"></i></a>
+        </div>
+      </s_paging>
+    </div>
   </main>
 
   <!-- notice -->
   <main class="post">
     <div class="post_header">
       <div class="container">
-        <h1 class="fs-title-3">공지사항의 제목이 들어가는 영역입니다. </h1>
+        <h1 class="fs-title-2">공지사항의 제목이 들어가는 영역입니다. </h1>
         <p>
           <span class="date">2022.12.10</span> 
           <s_ad_div>
@@ -976,14 +977,18 @@
     <div class="container">
       [##_article_rep_desc_##]
     </div>
+  
   </main>
-
+  <script>
+    randomBackgroundBG('.post_header');
+  </script>
   <!-- 보호되어 있는 글 -->
 
   <!-- footer -->
   <footer>
     <div class="container">
       <p class="fs-txt-5 text-center">Copyright © HANE. All rights reserved.</p>
+      <p class="fs-txt-5 text-center">문의 : <a href="mailto:thattheday@gmail.com" target="_blank"><i class="bi bi-envelope"></i></a> 또는 <a href="https://hane-j.tistory.com" target="_blank"><i class="bi bi-house-door"></i></a></p>
     </div>
 
   </footer>
