@@ -1109,12 +1109,179 @@ footer a {
   }
 }
 
-@media screen and (max-height: 760px) {
+@media screen and (max-width: 760px) {
   .sidenav {
     padding-top: 15px;
   }
   .sidenav a {
     font-size: 18px;
+  }
+  /* list style */
+  .list-area .list {
+    margin-top: 40px;
+    /* 카드형 리스트*/
+    /* 리스트형 1:1 비율*/
+    /* 왼쪽에 있는 이미지 리스트용 */
+    /* 오른쪽에 있는 이미지 리스트용 */
+    /* 3:4 비율 */
+    /* 4:3 비율 */
+    /* 이미지 리스트용 */
+  }
+  .list-area .list.list-style01 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .list-area .list.list-style01 li {
+    width: 100%;
+    margin-right: 0px;
+    margin-bottom: 16px;
+  }
+  .list-area .list.list-style01 li .img-wrap {
+    margin-bottom: 16px;
+  }
+  .list-area .list.list-style01 li .fs-title-4 {
+    margin-bottom: 8px;
+    padding: 0 8px;
+  }
+  .list-area .list.list-style01 li .fs-txt-4 {
+    padding: 0 8px;
+  }
+  .list-area .list.list-style02 li, .list-area .list.list-style05 li {
+    margin-bottom: 16px;
+  }
+  .list-area .list.list-style02 li > a, .list-area .list.list-style05 li > a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .list-area .list.list-style02 li > a .img-wrap, .list-area .list.list-style05 li > a .img-wrap {
+    width: 33%;
+    position: relative;
+  }
+  .list-area .list.list-style02 li > a .text-wrap, .list-area .list.list-style05 li > a .text-wrap {
+    width: calc(67% - 8px);
+  }
+  .list-area .list.list-style02 li > a .text-wrap .fs-title-4, .list-area .list.list-style05 li > a .text-wrap .fs-title-4 {
+    margin-bottom: 8px;
+  }
+  .list-area .list.list-style02 li > a .text-wrap .fs-txt-5, .list-area .list.list-style05 li > a .text-wrap .fs-txt-5 {
+    margin-top: 4px;
+  }
+  .list-area .list.list-style02 li > a .text-wrap .fs-txt-4, .list-area .list.list-style05 li > a .text-wrap .fs-txt-4 {
+    max-height: calc(14px * 3 * 1.5);
+    -webkit-line-clamp: 3;
+  }
+  .list-area .list.list-style02 li > a .img-wrap, .list-area .list.list-style03 li > a .img-wrap, .list-area .list.list-style04 li > a .img-wrap {
+    margin-right: 16px;
+  }
+  .list-area .list.list-style05 li > a .img-wrap, .list-area .list.list-style06 li > a .img-wrap, .list-area .list.list-style07 li > a .img-wrap {
+    margin-left: 16px;
+  }
+  .list-area .list.list-style03 li, .list-area .list.list-style06 li {
+    margin-bottom: 16px;
+  }
+  .list-area .list.list-style03 li > a, .list-area .list.list-style06 li > a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .list-area .list.list-style03 li > a .img-wrap, .list-area .list.list-style06 li > a .img-wrap {
+    width: 25%;
+  }
+  .list-area .list.list-style03 li > a .text-wrap, .list-area .list.list-style06 li > a .text-wrap {
+    width: calc(75% - 16px);
+  }
+  .list-area .list.list-style03 li > a .text-wrap .fs-title-4, .list-area .list.list-style06 li > a .text-wrap .fs-title-4 {
+    margin-bottom: 8px;
+  }
+  .list-area .list.list-style03 li > a .text-wrap .fs-txt-5, .list-area .list.list-style06 li > a .text-wrap .fs-txt-5 {
+    margin-top: 4px;
+  }
+  .list-area .list.list-style03 li > a .text-wrap .fs-txt-4, .list-area .list.list-style06 li > a .text-wrap .fs-txt-4 {
+    max-height: calc(14px * 3 * 1.5);
+    -webkit-line-clamp: 3;
+  }
+  .list-area .list.list-style04 li, .list-area .list.list-style07 li {
+    margin-bottom: 16px;
+  }
+  .list-area .list.list-style04 li > a, .list-area .list.list-style07 li > a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .list-area .list.list-style04 li > a .img-wrap, .list-area .list.list-style07 li > a .img-wrap {
+    width: 33%;
+    position: relative;
+  }
+  .list-area .list.list-style04 li > a .img-wrap:after, .list-area .list.list-style07 li > a .img-wrap:after {
+    content: "";
+    display: block;
+    padding-bottom: 75%;
+    width: 100%;
+    height: 100%;
+  }
+  .list-area .list.list-style04 li > a .img-wrap img, .list-area .list.list-style07 li > a .img-wrap img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .list-area .list.list-style04 li > a .text-wrap, .list-area .list.list-style07 li > a .text-wrap {
+    width: calc(67% - 16px);
+  }
+  .list-area .list.list-style04 li > a .text-wrap .fs-title-4, .list-area .list.list-style07 li > a .text-wrap .fs-title-4 {
+    margin-bottom: 8px;
+  }
+  .list-area .list.list-style04 li > a .text-wrap .fs-txt-5, .list-area .list.list-style07 li > a .text-wrap .fs-txt-5 {
+    margin-top: 4px;
+  }
+  .list-area .list.list-style04 li > a .text-wrap .fs-txt-4, .list-area .list.list-style07 li > a .text-wrap .fs-txt-4 {
+    max-height: calc(14px * 3 * 1.5);
+    -webkit-line-clamp: 3;
+  }
+  .list-area .list.list-style08 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .list-area .list.list-style08 li {
+    position: relative;
+    width: calc(50% - (8px / 2));
+    margin-right: 8px;
+    margin-bottom: 8px;
+  }
+  .list-area .list.list-style08 li:nth-child(2n) {
+    margin-right: 0;
   }
 }
 /*# sourceMappingURL=style.css.map */
