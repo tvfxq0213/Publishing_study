@@ -51,6 +51,7 @@
   --font-size-05: 16px;
   --font-size-06: 14px;
   --font-size-07: 12px;
+  --font-size-08: 10px;
 }
 
 /* basic */
@@ -1110,11 +1111,59 @@ footer a {
 }
 
 @media screen and (max-width: 760px) {
+  header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    background: #fff;
+  }
   .sidenav {
-    padding-top: 15px;
+    padding-top: 80px;
+  }
+  .sidenav .category,
+  .sidenav .sidebar-2 {
+    padding-right: 32px;
   }
   .sidenav a {
-    font-size: 18px;
+    font-size: 16px;
+  }
+  /* font-size */
+  .fs-title-1 {
+    font-family: 'LeferiPointOblique';
+    font-size: var(--font-size-02);
+  }
+  .fs-title-2 {
+    font-family: 'LeferiPointOblique';
+    font-size: var(--font-size-03);
+  }
+  .fs-title-3 {
+    font-family: 'LeferiPointOblique';
+    font-size: var(--font-size-04);
+  }
+  .fs-title-4 {
+    font-family: 'LeferiPointOblique';
+    font-size: var(--font-size-05);
+  }
+  .fs-title-5 {
+    font-family: 'LeferiPointOblique';
+    font-size: var(--font-size-06);
+  }
+  .fs-txt-1 {
+    font-size: var(--font-size-04);
+  }
+  .fs-txt-2 {
+    font-size: var(--font-size-05);
+  }
+  .fs-txt-3 {
+    font-size: var(--font-size-06);
+  }
+  .fs-txt-4 {
+    font-size: var(--font-size-07);
+  }
+  .fs-txt-5 {
+    font-size: var(--font-size-08);
   }
   /* list style */
   .list-area .list {
@@ -1179,10 +1228,6 @@ footer a {
   .list-area .list.list-style02 li > a .text-wrap .fs-txt-5, .list-area .list.list-style05 li > a .text-wrap .fs-txt-5 {
     margin-top: 4px;
   }
-  .list-area .list.list-style02 li > a .text-wrap .fs-txt-4, .list-area .list.list-style05 li > a .text-wrap .fs-txt-4 {
-    max-height: calc(14px * 3 * 1.5);
-    -webkit-line-clamp: 3;
-  }
   .list-area .list.list-style02 li > a .img-wrap, .list-area .list.list-style03 li > a .img-wrap, .list-area .list.list-style04 li > a .img-wrap {
     margin-right: 16px;
   }
@@ -1214,10 +1259,6 @@ footer a {
   }
   .list-area .list.list-style03 li > a .text-wrap .fs-txt-5, .list-area .list.list-style06 li > a .text-wrap .fs-txt-5 {
     margin-top: 4px;
-  }
-  .list-area .list.list-style03 li > a .text-wrap .fs-txt-4, .list-area .list.list-style06 li > a .text-wrap .fs-txt-4 {
-    max-height: calc(14px * 3 * 1.5);
-    -webkit-line-clamp: 3;
   }
   .list-area .list.list-style04 li, .list-area .list.list-style07 li {
     margin-bottom: 16px;
@@ -1260,10 +1301,6 @@ footer a {
   .list-area .list.list-style04 li > a .text-wrap .fs-txt-5, .list-area .list.list-style07 li > a .text-wrap .fs-txt-5 {
     margin-top: 4px;
   }
-  .list-area .list.list-style04 li > a .text-wrap .fs-txt-4, .list-area .list.list-style07 li > a .text-wrap .fs-txt-4 {
-    max-height: calc(14px * 3 * 1.5);
-    -webkit-line-clamp: 3;
-  }
   .list-area .list.list-style08 {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1282,6 +1319,10 @@ footer a {
   }
   .list-area .list.list-style08 li:nth-child(2n) {
     margin-right: 0;
+  }
+  /* tag*/
+  .tags a {
+    font-size: var(--font-size-07);
   }
 }
 /*# sourceMappingURL=style.css.map */

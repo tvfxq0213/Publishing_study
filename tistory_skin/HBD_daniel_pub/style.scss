@@ -50,6 +50,7 @@
   --font-size-05 : 16px;
   --font-size-06 : 14px;
   --font-size-07 : 12px;
+  --font-size-08 : 10px;
 }
 
 /* basic */
@@ -979,8 +980,61 @@ footer{
   }
 }
 @media screen and (max-width: 760px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
+  header{
+    width:100%;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:99;
+    background:#fff;
+  }
+  .sidenav {
+    padding-top: 80px;
+    .category,
+    .sidebar-2{
+      padding-right:32px;
+
+    }
+  
+  }
+  .sidenav a {font-size: 16px;}
+  /* font-size */
+  .fs-title-1{
+    font-family:'LeferiPointOblique';
+    font-size:var(--font-size-02);
+  }
+  .fs-title-2{
+    font-family:'LeferiPointOblique';
+    font-size:var(--font-size-03);
+  }
+  .fs-title-3{
+    font-family:'LeferiPointOblique';
+    font-size:var(--font-size-04);
+  }
+  .fs-title-4{
+    font-family:'LeferiPointOblique';
+    font-size:var(--font-size-05);
+  }
+  .fs-title-5{
+    font-family:'LeferiPointOblique';
+    font-size:var(--font-size-06);
+  }
+  
+  .fs-txt-1{
+    font-size:var(--font-size-04);
+  }
+  .fs-txt-2{
+    font-size:var(--font-size-05);
+  }
+  .fs-txt-3{
+    font-size:var(--font-size-06);
+  }
+  .fs-txt-4{
+    font-size:var(--font-size-07);
+  }
+  .fs-txt-5{
+    font-size:var(--font-size-08);
+  }
 
 
 /* list style */
@@ -1034,10 +1088,6 @@ footer{
           .fs-txt-5{
             margin-top:4px;
           }
-          .fs-txt-4{
-            max-height:calc(14px * 3 * 1.5);
-            -webkit-line-clamp: 3; // 원하는 라인수
-          }
 
         }
       }
@@ -1084,11 +1134,7 @@ footer{
           .fs-txt-5{
             margin-top:4px;
           }
-          .fs-txt-4{
-            max-height:calc(14px * 3 * 1.5);
-           
-            -webkit-line-clamp: 3; // 원하는 라인수
-          }
+
          
         }
       }
@@ -1129,10 +1175,6 @@ footer{
           .fs-txt-5{
             margin-top:4px;
           }
-          .fs-txt-4{
-            max-height:calc(14px * 3 * 1.5);
-            -webkit-line-clamp: 3; // 원하는 라인수
-          }
           
         }
       }
@@ -1157,6 +1199,14 @@ footer{
     }
   }
 
+}
+
+/* tag*/
+
+.tags{
+  a{
+    font-size:var(--font-size-07);
+  }
 }
 
 }
