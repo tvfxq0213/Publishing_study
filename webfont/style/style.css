@@ -1,0 +1,239 @@
+@charset "UTF-8";
+html, body, h1, h2, h3, h4, h5, h6, p, blockquote, code, img, dl, dt, dd, ol, ul, li, fieldset, legend, caption {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+div, span, article, section, header, footer, p, ul, li, fieldset, legend, label, a, nav {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  /* 브라우저 높이도 100%으로 채워 놓고 감 */
+}
+
+body {
+  min-height: 100%;
+  /* contents의 내가가진 자식의 높이만큼 달라지기 때문에 자식인 body가 최소한 브라우저의 높이만큼 되도록 함 */
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  border-bottom: 1px solid #dfdfdf;
+}
+
+header .border-rounded {
+  background: #ddd;
+  font-weight: bold;
+  padding: 4px 16px;
+  border-radius: 30px;
+}
+
+header .border-rounded a {
+  text-decoration: none;
+}
+
+header .logo {
+  height: 16px;
+}
+
+header .navbar .navbar-toggler {
+  padding: 4px;
+  color: #000;
+}
+
+header .navbar .navbar-toggler i {
+  font-size: 30px;
+}
+
+footer {
+  background: #333;
+  color: white;
+}
+
+footer ul.w-100 {
+  border-bottom: 1px solid #fff;
+}
+
+footer ul.w-100 li {
+  margin-right: 16px;
+  padding-bottom: 16px;
+}
+
+footer ul.w-100 li a {
+  text-decoration: none;
+  color: white;
+}
+
+footer ul.w-100 li.sns {
+  margin-right: 8px;
+}
+
+footer ul.w-100 li.sns:last-child {
+  margin-right: 0;
+}
+
+footer ul.w-100 li.sns a {
+  border-radius: 50%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  background: rgba(255, 255, 255, 0.3);
+  width: 36px;
+  height: 36px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer p {
+  line-height: 1.5;
+  font-size: 12px;
+}
+
+#contents > article {
+  padding-bottom: 100px;
+}
+
+#main .main.main_01 {
+  background: #dfdfdf;
+}
+
+#main .main.main_01 .container {
+  min-height: 400px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#main .main.main_02 ul li img {
+  width: 100%;
+}
+
+#main .main.main_04 .row .col-md-4 > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  background-color: #dfdfdf;
+  border-radius: 16px;
+  height: 500px;
+}
+
+#about .about.about_01 {
+  background: #dfdfdf;
+}
+
+#about .about.about_01 .container {
+  min-height: 400px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#about .about.about_04 ul li {
+  padding: 0 20px;
+  text-align: center;
+}
+
+#about .about.about_04 ul li .bi-check-circle {
+  font-size: 100px;
+}
+
+#about .about.about_04 ul li h3,
+#about .about.about_04 ul li p {
+  text-align: left;
+}
+
+#about .about.about_05 .row .col-md-4 > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 16px;
+  height: 400px;
+  border: 1px solid #333;
+}
+
+#about .about.about_05 .row .col-md-4 > div img {
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 760px) {
+  header .border-rounded {
+    background: #fff;
+    font-weight: bold;
+    padding: inherit;
+  }
+  header .border-rounded a {
+    display: block;
+    text-decoration: none;
+  }
+}
+/*# sourceMappingURL=style.css.map */
