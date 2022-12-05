@@ -74,7 +74,7 @@
               <h4>브랜드 : 브랜드명</h4>
             </div>
             <!-- 비로그인시 숨김처리 -->
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addFamilyModal">
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#projectEditModal">
               <i class="bi bi-plus-circle"></i> 패밀리 추가하기
             </button>
           </div>
@@ -151,6 +151,10 @@
 									<p class="font-weight w-100 fs-title-4 position-relative align-items-center d-flex" th:inline="text">
 										Weight Name
 										<span th:class="${weight.get('my_product')==1}?'use':''" th:text="${weight.get('my_product')==1}?#{brand.html.013}:''">사용중</span> 											
+                    <!-- Button trigger modal -->
+                    <button type="button" class="ms-auto btn btn-primary" data-bs-toggle="modal" data-bs-target="#projectEditModal">
+                      웹폰트 추가
+                    </button>
 									</p>
 								<div>
 								<th:block th:if="${familyGroupInfo.get('family_group_preview_option')==1}" >
@@ -202,25 +206,100 @@
 
 
     <!-- Modal -->
-    <div class="modal fade" id="addFamilyModal" tabindex="-1" aria-labelledby="addFamilyModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
+    <!-- 프로젝트 편집/생성 02-3-1 -->
+    <div class="modal fade" id="projectEditModal" tabindex="-1" aria-labelledby="projectEditModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="addFamilyModalLabel">Modal title</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <h5 class="modal-title text-center" id="projectEditModalLabel">프로젝트 편집</h5>
           </div>
           <div class="modal-body">
-            ...
+            <form>
+              <div class="form-group">
+                <label class="d-block">프로젝트 명 <span class="text-sandoll">*</span></label>
+                <input type="text" class="form-control" placeholder="프로젝트 생성 또는 선택"/>
+              </div>
+              <div class="form-group">
+                <label class="d-block">도메인 <span class="text-sandoll">*</span></label>
+                <input type="text" class="form-control" placeholder="https://, www 빼고 입력"/>
+              </div>
+              <div class="form-group">
+                <label class="d-block">폰트선택</label>
+                <p>웹 사이트에 사용하고자 하는 폰트를 선택해 주세요. 많은 폰트를 한번에 선택하면 트래픽에 영향을 줍니다.</p>
+                <div class="div-scrollable">
+                  <ul>
+                    <li class="font-family">
+                      310 정인자 2.0 <span>3/10</span>
+                    </li>
+                    <li class="font-weight">
+                      <input type="checkbox" class="form-check-input" id="fontfamilyid_01"/><label for="fontfamilyid_01"><span>Font Weight Name</span> <span class="font-preview">초록빛 고래수염과 높이뛰는 황새다리 건널목 신호등 아래</span></label>
+                    </li>
+                    <li class="font-weight">
+                      <input type="checkbox" class="form-check-input" id="fontfamilyid_02"/><label for="fontfamilyid_02"><span>Font Weight Name</span> <span class="font-preview">초록빛 고래수염과 높이뛰는 황새다리 건널목 신호등 아래</span></label>
+                    </li>
+                    <li class="font-weight">
+                      <input type="checkbox" class="form-check-input" id="fontfamilyid_03"/><label for="fontfamilyid_03"><span>Font Weight Name</span> <span class="font-preview">초록빛 고래수염과 높이뛰는 황새다리 건널목 신호등 아래</span></label>
+                    </li>
+                    <li class="font-weight">
+                      <input type="checkbox" class="form-check-input" id="fontfamilyid_04"/><label for="fontfamilyid_04"><span>Font Weight Name</span> <span class="font-preview">초록빛 고래수염과 높이뛰는 황새다리 건널목 신호등 아래</span></label>
+                    </li>
+                    <li class="font-weight">
+                      <input type="checkbox" class="form-check-input" id="fontfamilyid_05"/><label for="fontfamilyid_05"><span>Font Weight Name</span> <span class="font-preview">초록빛 고래수염과 높이뛰는 황새다리 건널목 신호등 아래</span></label>
+                    </li>
+                  </ul>  
+                </div>
+              </div>
+            </form>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">취소</button>
+            <button type="button" class="btn btn-primary" id="prjEditBtn">수정</button>
           </div>
         </div>
       </div>
     </div>
 
+    <!-- 프로젝트 생성코드 02-03-2 -->
+    <div class="modal fade" id="projectCodeModal" tabindex="-1" aria-labelledby="projectCodeModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title text-center" id="projectCodeModalLabel">프로젝트 생성코드</h5>
+          </div>
+          <div class="modal-body">
+            ...
+          </div>
+          <div class="modal-footer">
+            <a href="/webfont/project.html" class="btn btn-outline-secondary">프로젝트 관리</a>
+            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">완료</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      $(function(){
+        var prjEditModal = new bootstrap.Modal(document.getElementById('projectEditModal'));
+        var prjCodeModal = new bootstrap.Modal(document.getElementById('projectCodeModal'));
+
+
+        $('#prjEditBtn').on('click',function(){
+
+
+          //프로젝트 세이브
+
+          //세이브 성공시 모달 닫고, 프로젝트 생성코드 모달 열림
+          prjEditModal.hide();
+
+          prjCodeModal.show();
+
+
+        });
+      });
+    </script>
+
   </div>
+
   <footer class="py-5">
     <div class="container">
       <ul class="d-flex w-100 flex-wrap align-items-center">

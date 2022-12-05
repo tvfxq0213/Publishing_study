@@ -320,6 +320,7 @@ footer p {
 #contents > article {
   padding-top: 60px;
   padding-bottom: 100px;
+  min-height: calc(100vh - 300px);
 }
 
 #main .main.main_01 {
@@ -723,6 +724,99 @@ footer p {
 
 .filterForm .select-wrap .form-control[aria-expanded="true"] {
   background-image: url("data:image/svg+xml,%0A%3Csvg id='ic_txt' xmlns='http://www.w3.org/2000/svg' width='32' height='32'%3E%3Cdefs%3E%3Cstyle%3E .cls-1%7Bfill:none;stroke:%23000;stroke-width:1.5px%7D %3C/style%3E%3C/defs%3E%3Cpath id='Line_2' data-name='Line 2' class='cls-1' transform='translate(9 9)' d='M0 0h14'/%3E%3Cpath id='Rectangle_133' data-name='Rectangle 133' style='fill:none' d='M0 0h32v32H0z'/%3E%3Cpath id='Line_187' data-name='Line 187' class='cls-1' transform='translate(16 9)' d='M0 0v15'/%3E%3C/svg%3E%0A"), url("data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16'%3E%3Cpath data-name='Path 433' d='m6209 1016 5-5 5 5' transform='translate(-6206 -1006)' style='stroke:%23000;fill:none'/%3E%3Cpath data-name='Rectangle 171' style='fill:none' d='M0 0h16v16H0z'/%3E%3C/svg%3E%0A");
+}
+
+.form-check-input[type=checkbox] {
+  border-radius: 0;
+  border: none;
+  margin-top: 0;
+  vertical-align: baseline;
+  float: inherit;
+  margin-left: 0;
+  margin-right: 0.5625rem;
+  background-image: url("data:image/svg+xml,%0A%3Csvg id='chkbox_empty_PC' xmlns='http://www.w3.org/2000/svg' width='20' height='20'%3E%3Cdefs%3E%3Cstyle%3E .cls-2%7Bfill:none%7D %3C/style%3E%3C/defs%3E%3Cg id='Rectangle_329' data-name='Rectangle 329' style='stroke:%23ddd;stroke-width:1.5px;fill:none'%3E%3Cpath style='stroke:none' d='M0 0h18v18H0z' transform='translate(1 1)'/%3E%3Cpath class='cls-2' d='M.75.75h16.5v16.5H.75z' transform='translate(1 1)'/%3E%3C/g%3E%3Cpath id='Rectangle_331' data-name='Rectangle 331' class='cls-2' d='M0 0h20v20H0z'/%3E%3C/svg%3E%0A");
+}
+
+.form-check-input[type=checkbox]:checked {
+  border: none;
+  background-color: transparent;
+  background-image: url("data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20'%3E%3Cpath data-name='Rectangle 329' transform='translate(1 1)' style='fill:%234173fa' d='M0 0h18v18H0z'/%3E%3Cpath data-name='Path 471' d='m-4693.282 1512 4 4 6-6' transform='translate(4698.281 -1502.998)' style='stroke:%23fff;stroke-width:1.5px;fill:none'/%3E%3Cpath data-name='Rectangle 331' style='fill:none' d='M0 0h20v20H0z'/%3E%3C/svg%3E%0A");
+}
+
+.form-check-input[type=checkbox].partly {
+  background-image: url("data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20'%3E%3Cpath data-name='Rectangle 329' transform='translate(1 1)' style='fill:%234173fa' d='M0 0h18v18H0z'/%3E%3Cpath data-name='Rectangle 331' style='fill:none' d='M0 0h20v20H0z'/%3E%3Cpath data-name='Line 760' transform='translate(4.5 10)' style='stroke:%23fff;stroke-width:1.5px;fill:none' d='M0 0h11'/%3E%3C/svg%3E%0A");
+}
+
+.modal .div-scrollable {
+  height: 200px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  border: 1px solid #ddd;
+}
+
+.modal .div-scrollable::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.3);
+  background-color: #ddd;
+}
+
+.modal .div-scrollable::-webkit-scrollbar {
+  width: 4px;
+  background-color: #ddd;
+}
+
+.modal .div-scrollable::-webkit-scrollbar-thumb {
+  background-color: #1c1c1c;
+}
+
+.modal .div-scrollable ul li {
+  padding: 4px 16px;
+}
+
+.modal .div-scrollable ul li.font-weight {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.modal .div-scrollable ul li.font-weight input[type="checkbox"] + label {
+  width: calc(100% - 30px);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.modal .div-scrollable ul li.font-weight input[type="checkbox"] + label .font-preview {
+  margin-left: auto;
+  width: 50%;
+  font-size: 24px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.modal .div-scrollable ul li.font-weight input[type="checkbox"]:checked + label label {
+  color: #4173fa;
+}
+
+.modal .div-scrollable ul li.font-family {
+  padding: 8px 16px;
+  font-weight: bold;
+  font-size: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.modal .div-scrollable ul li.font-family > span {
+  font-weight: normal;
+  color: #999;
+  font-size: 12px;
+  margin-left: auto;
 }
 
 @media screen and (max-width: 760px) {
