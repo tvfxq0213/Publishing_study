@@ -1,0 +1,140 @@
+.d-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100vw;
+}
+
+.d-flex.no-depth {
+  cursor: pointer;
+}
+
+.d-flex.no-depth > div:hover .cls-1 {
+  fill: #3e3a39;
+}
+
+.d-flex > div {
+  border: 1px solid #ddd;
+  text-align: center;
+  -webkit-box-flex: 1 !important;
+      -ms-flex: 1 1 auto !important;
+          flex: 1 1 auto !important;
+  padding: 30px;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+}
+
+.cls-1 {
+  fill: #dbdcdc;
+  -webkit-transition: fill 0.3s;
+  transition: fill 0.3s;
+}
+
+.cls-none {
+  fill: none;
+}
+
+.depth-0 {
+  -webkit-transition: fill 0.3s;
+  transition: fill 0.3s;
+  cursor: pointer;
+}
+
+.depth-0:hover:not(.cls-none) {
+  fill: #3e3a39;
+}
+
+.depth-0.test1 {
+  fill: yellow;
+}
+
+.depth-0.test2 {
+  fill: yellowgreen;
+}
+
+.depth-0.test3 {
+  fill: green;
+}
+
+.depth-0.test4 {
+  fill: olivedrab;
+}
+
+.depth-0.test5 {
+  fill: olive;
+}
+
+.depth-0.test6 {
+  fill: darkgreen;
+}
+
+.depth-1 {
+  -webkit-transition: fill 0.3s;
+  transition: fill 0.3s;
+  cursor: pointer;
+}
+
+.depth-1.test1 {
+  fill: red;
+}
+
+.depth-1.test2 {
+  fill: palevioletred;
+}
+
+.depth-1.test3 {
+  fill: blueviolet;
+}
+
+.depth-1:hover:not(.cls-none) {
+  fill: #3e3a39;
+}
+
+.depth-2 {
+  -webkit-transition: fill 0.3s;
+  transition: fill 0.3s;
+  cursor: pointer;
+}
+
+.depth-2.test1 {
+  fill: lightblue;
+}
+
+.depth-2.test2 {
+  fill: cyan;
+}
+
+.depth-2.test3 {
+  fill: blue;
+}
+
+.depth-2:hover:not(.cls-none) {
+  fill: #3e3a39;
+}
+
+.depth-3 {
+  -webkit-transition: stroke 0.3s;
+  transition: stroke 0.3s;
+  cursor: pointer;
+  fill: none;
+  stroke: #ccc;
+  stroke-miterlimit: 10;
+  stroke-width: 10px;
+}
+
+.depth-3.test1 {
+  stroke: yellow;
+}
+
+.depth-3.test2 {
+  stroke: yellowgreen;
+}
+
+.depth-3.test3 {
+  stroke: green;
+}
+
+.depth-3:hover:not(.cls-none) {
+  stroke: #3e3a39;
+}
+/*# sourceMappingURL=font.css.map */
